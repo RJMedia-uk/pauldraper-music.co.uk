@@ -1,0 +1,87 @@
+# Redirect non-www to www
+
+# Create pretty URLs
+# End: Create pretty URLs
+
+# Specific redirections
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Help$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Help.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Search&f=0$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Search-f-0.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Members$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Members.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=calendar$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-calendar.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Search$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Search.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=00$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-00.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Reg&CODE=00$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Reg-CODE-00.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=idx$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-idx.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=2430$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2430.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=1$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-1.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=30$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-30.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=24$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-24.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=15$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-15.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=25$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-25.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=21$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-21.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=22$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-22.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=19$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-19.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=8&fromforum=0&i=1$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-8-fromforum-0-i-1.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=8$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-8.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=2430&view=getlastpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2430-view-getlastpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=2430&view=getnewpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2430-view-getnewpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showuser=975$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-975.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=18$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-18.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=26&fromforum=0&i=1$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-26-fromforum-0-i-1.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=26$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-26.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=2378&view=getlastpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2378-view-getlastpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=2378&view=getnewpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2378-view-getnewpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showuser=94$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-94.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=20&fromforum=0&i=1$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-20-fromforum-0-i-1.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=20$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-20.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=2374&view=getlastpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2374-view-getlastpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=2374&view=getnewpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2374-view-getnewpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showuser=1314$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-1314.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=9$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-9.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=10&fromforum=0&i=1$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-10-fromforum-0-i-1.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=10$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-10.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=2397&view=getlastpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2397-view-getlastpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=2397&view=getnewpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2397-view-getnewpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=11&fromforum=0&i=1$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-11-fromforum-0-i-1.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=11$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-11.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=1938&view=getlastpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-1938-view-getlastpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=1938&view=getnewpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-1938-view-getnewpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showuser=509$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-509.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=6$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-6.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=27&fromforum=0&i=1$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-27-fromforum-0-i-1.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=27$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-27.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=2410&view=getlastpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2410-view-getlastpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=2410&view=getnewpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2410-view-getnewpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showuser=1386$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-1386.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=7&fromforum=0&i=1$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-7-fromforum-0-i-1.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showforum=7$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-7.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=1849&view=getlastpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-1849-view-getlastpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showtopic=1849&view=getnewpost$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-1849-view-getnewpost.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=06$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-06.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=05$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-05.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=search&CODE=getactive$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-search-CODE-getactive.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Stats&CODE=leaders$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Stats-CODE-leaders.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=stats$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-stats.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Members&max_results=20&sort_key=posts&sort_order=desc&filter=ALL$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Members-max_results-20-sort_key-posts-sort_order-desc-filter-ALL.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Stats$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Stats.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Online&CODE=listall&sort_key=click$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Online-CODE-listall-sort_key-click.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Online&CODE=listall&sort_key=name&sort_order=asc&show_mem=reg$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Online-CODE-listall-sort_key-name-sort_order-asc-show_mem-reg.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showuser=656$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-656.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&showuser=1396$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-1396.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Search&CODE=01$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Search-CODE-01.html? permanent; }
+if ($args ~* ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=01&CookieDate=1$){ rewrite ^/forum/index\.php$ /forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-01-CookieDate-1.html? permanent; }
+
+# Redirect all extensions to html
+if ($is_args = ''){
+	rewrite ^([^.]*)\.shtml$ $1.html permanent;
+	rewrite ^([^.]*)\.phtml$ $1.html permanent;
+	rewrite ^([^.]*)\.jhtml$ $1.html permanent;
+	rewrite ^([^.]*)\.htm$ $1.html permanent;
+	rewrite ^([^.]*)\.php$ $1.html permanent;
+	rewrite ^([^.]*)\.aspx$ $1.html permanent;
+	rewrite ^([^.]*)\.asp$ $1.html permanent;
+	rewrite ^([^.]*)\.jsp$ $1.html permanent;
+	rewrite ^([^.]*)\.apk$ $1.html permanent;
+}
+# End: Redirect all extensions to html

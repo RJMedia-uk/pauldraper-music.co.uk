@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=2N_sDSC0" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=o9P2E1FK" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.pauldraper-music.co.uk/cgi-sys/suspendedpage.cgi","20131107174919","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1383846559");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Account Suspended</title>
+<style type="text/css">
+.title {
+	font-family: arial, verdana;
+	font-size: 9pt;
+	font-weight: normal;
+}
+.distributers {
+	font-family: arial, verdana;
+	font-size: 11pt;
+	font-weight: normal;
+}
+.info {
+	font-family: arial, verdana;
+	font-size: 8pt;
+	font-weight: normal;
+}
+.design {
+	font-family: arial, verdana;
+	font-size: 8pt;
+	font-weight: normal;
+}
+.menu {
+	border-top: 1px #374646 solid;
+	border-left: 1px #374646 solid;
+	border-right: 1px #374646 solid;
+	border-bottom: 1px #374646 solid;
+	font-family: verdana, arial;
+	font-size: 8pt;
+	font-weight: normal;
+}
+.cellheader {
+	border-top: 1px #374646 solid;
+	border-left: 1px #374646 solid;
+	border-right: 1px #374646 solid;
+	border-bottom: 1px #374646 solid;
+	font-family: verdana, arial;
+	font-size: 20pt;
+	font-weight: normal;
+	color: #F1F1F1;
+}
+.scellheader {
+	border-top: 1px #374646 solid;
+	border-left: 1px #374646 solid;
+	border-right: 1px #374646 solid;
+	border-bottom: 1px #374646 solid;
+	font-family: verdana, arial;
+	font-size: 15pt;
+	font-weight: normal;
+	color: #F1F1F1;
+}
+.bigcellheader {
+	border-top: 1px #374646 solid;
+	border-left: 1px #374646 solid;
+	border-right: 1px #374646 solid;
+	border-bottom: 1px #374646 solid;
+	font-family: verdana, arial;
+	font-size: 30pt;
+	font-weight: normal;
+	color: #F1F1F1;
+	link: #F1F1F1;
+	vlink: #F1F1F1;
+}
+.tblheader {
+	background-color: #AAAAAA;
+	border-top: 1px #374646 solid;
+	border-left: 1px #374646 solid;
+	border-right: 1px #374646 solid;
+	border-bottom: 1px #374646 solid;
+	font-family: verdana, arial;
+	font-size: 14pt;
+	font-weight: normal;
+}
+.tdshade1 {
+	background-color: #DDDDDD;
+	border-top: 1px #374646 solid;
+	border-left: 1px #374646 solid;
+	border-right: 1px #374646 solid;
+	border-bottom: 1px #374646 solid;
+	font-family: verdana, arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+.tdshade2 {
+	background-color: #EEEEEE;
+	border-top: 1px #374646 solid;
+	border-left: 1px #374646 solid;
+	border-right: 1px #374646 solid;
+	border-bottom: 1px #374646 solid;
+	font-family: verdana, arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+body {
+	font-family:arial;
+	margin:0;
+	padding:0;
+	background:url(/web/20131107174919im_/http://www.pauldraper-music.co.uk/img-sys/bg.jpg) repeat-x #dff4fe;
+	color:#6f6f6f;
+	font-size:12px;
+}
+a {
+	color:#0075a9;
+}
+* {
+	margin:0;
+	padding:0;
+}
+h1 {
+	background:url(/web/20131107174919im_/http://www.pauldraper-music.co.uk/img-sys/headerbg.jpg) no-repeat;
+	height:63px;
+	color:#fff;
+	padding:20px;
+	font-size:28px;
+	font-family:century gothic, arial;letter-spacing:-0.5px;
+}
+h2 {
+	font-size:20px;
+	margin:0 0 15px 0;
+}
+p {
+	margin:10px 15px 15px 50px;
+}
+#wrap {
+	margin:50px auto 20px auto;
+	width:906px;
+}
+.msg {
+	background:url(/web/20131107174919im_/http://www.pauldraper-music.co.uk/img-sys/contentbox.jpg) no-repeat;
+	min-height:206px;
+	color:#000;
+	font-size:16px;
+	padding:25px;
+	text-align:center;
+}
+* html .msg {
+	height:206px;
+}
+.msg p {
+	border:none;
+	margin:0 0 10px 0;
+}
+.msg ul {
+	margin:15px 15px 0 15px;
+}
+li {
+	margin:10px 0;
+}
+.note {
+	font-style:italic;
+	border-bottom:1px solid #cae0e5;
+	border-top:1px solid #cae0e5;
+	padding:15px 0;
+	margin-right:50px;
+}
+#contactinfo, .contactinfo {
+	padding:5px 0;
+}
+#contactinfo li, .contactinfo li {
+	float:left;
+	padding:5px;
+	width:250px;
+	list-style:none;
+	font-size:14px;
+}
+p.troubleshoot {
+	font-style:italic;
+	border:dashed 1px #dfe9ed;
+	padding:5px;
+	margin:10px 0 0 0;
+}
+</style>
+</head>
+<body>
+<h1>Account Suspended</h1>
+<div id="wrap">
+  <div class="msg">
+    <h2><strong>This Account Has Been Suspended</strong></h2>
+  </div>
+</div>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 17:49:19 Nov 07, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:42:14 Jun 24, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  capture_cache.get: 0.337
+  captures_list: 1.116
+  exclusion.robots: 0.056
+  exclusion.robots.policy: 0.044
+  esindex: 0.008
+  cdx.remote: 10.622
+  LoadShardBlock: 125.915 (3)
+  PetaboxLoader3.datanode: 105.225 (4)
+  PetaboxLoader3.resolve: 576.163 (2)
+  load_resource: 560.392
+-->

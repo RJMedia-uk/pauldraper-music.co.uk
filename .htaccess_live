@@ -1,0 +1,181 @@
+# invoke rewrite engine
+RewriteEngine On
+RewriteBase /
+
+Options -Indexes
+<IfModule mod_negotiation.c>
+	Options -MultiViews
+</IfModule>
+
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Prevent scraping from archive for free demo
+RewriteCond %{HTTP_USER_AGENT} (ia_archiver) [NC]
+RewriteRule . - [F,L]
+
+# Create pretty URLs
+DirectorySlash Off
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+# End: Create pretty URLs
+
+# Specific redirections
+RewriteRule ^index\.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Help$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Help.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Search&f=0$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Search-f-0.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Members$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Members.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=calendar$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-calendar.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Search$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Search.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=00$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-00.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Reg&CODE=00$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Reg-CODE-00.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=idx$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-idx.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=2430$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2430.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=1$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-1.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=30$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-30.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=24$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-24.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=15$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-15.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=25$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-25.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=21$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-21.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=22$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-22.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=19$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-19.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=8&fromforum=0&i=1$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-8-fromforum-0-i-1.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=8$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-8.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=2430&view=getlastpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2430-view-getlastpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=2430&view=getnewpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2430-view-getnewpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showuser=975$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-975.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=18$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-18.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=26&fromforum=0&i=1$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-26-fromforum-0-i-1.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=26$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-26.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=2378&view=getlastpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2378-view-getlastpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=2378&view=getnewpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2378-view-getnewpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showuser=94$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-94.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=20&fromforum=0&i=1$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-20-fromforum-0-i-1.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=20$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-20.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=2374&view=getlastpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2374-view-getlastpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=2374&view=getnewpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2374-view-getnewpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showuser=1314$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-1314.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=9$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-9.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=10&fromforum=0&i=1$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-10-fromforum-0-i-1.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=10$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-10.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=2397&view=getlastpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2397-view-getlastpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=2397&view=getnewpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2397-view-getnewpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=11&fromforum=0&i=1$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-11-fromforum-0-i-1.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=11$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-11.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=1938&view=getlastpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-1938-view-getlastpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=1938&view=getnewpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-1938-view-getnewpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showuser=509$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-509.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=6$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-6.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=27&fromforum=0&i=1$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-27-fromforum-0-i-1.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=27$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-27.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=2410&view=getlastpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2410-view-getlastpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=2410&view=getnewpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2410-view-getnewpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showuser=1386$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-1386.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=04&f=7&fromforum=0&i=1$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-7-fromforum-0-i-1.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showforum=7$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-7.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=1849&view=getlastpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-1849-view-getlastpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showtopic=1849&view=getnewpost$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-1849-view-getnewpost.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=06$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-06.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=05$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-05.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=search&CODE=getactive$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-search-CODE-getactive.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Stats&CODE=leaders$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Stats-CODE-leaders.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=stats$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-stats.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Members&max_results=20&sort_key=posts&sort_order=desc&filter=ALL$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Members-max_results-20-sort_key-posts-sort_order-desc-filter-ALL.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Stats$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Stats.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Online&CODE=listall&sort_key=click$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Online-CODE-listall-sort_key-click.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Online&CODE=listall&sort_key=name&sort_order=asc&show_mem=reg$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Online-CODE-listall-sort_key-name-sort_order-asc-show_mem-reg.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showuser=656$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-656.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&showuser=1396$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-1396.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Search&CODE=01$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Search-CODE-01.html [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=217c4c0518f4c226610a86c03e142686&act=Login&CODE=01&CookieDate=1$
+RewriteRule ^forum/index\.php$ forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-01-CookieDate-1.html [L,R=301,QSD]
+
+# Redirect all extensions to html
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.shtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.phtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.jhtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.htm$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.php$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.aspx$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.asp$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.jsp$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.apk$ $1.html [L,NC,R=301]
+# End: Redirect all extensions to html
