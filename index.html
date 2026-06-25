@@ -1,2193 +1,1022 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
-<link rel="shortcut icon" href="../forum/favicon.ico"/>
-<title>PaulDraper-Music.co.uk (Powered by Invision Power Board)</title>
-	<link rel="canonical" href="http://www.pauldraper-music.co.uk/forum/index.html" />
+<form action="/" target="searchwindow">
+<input type="hidden" name="template" value="default">
+<input type="hidden" name="basehref" value="http://pauldraper-mansun.co.uk">
+<input type="hidden" name="user" value="mcothier">
+&nbsp;</form>
+    <title>www.pauldraper-music.co.uk : Home</title>
+	<link rel="canonical" href="http://www.pauldraper-music.co.uk" />
 <style type="text/css">
-	/*  
- * Cascading Style Sheet(CSS 467), for Invision Power Board 2.2.0
- * Author: James A. Mathias, admin@leihu.com, http://www.1lotus.com 
- * Copyright: 2005 Invision Power Services, all rights reserved 
- *
- * All style attributes in alpha-numeric order starting from 0
- *
- */
-/* 
- * ========================================
- * global element styles 
- * ========================================
- */
-html{
-	overflow-x: auto; /* fixes MSIE scrollbar bug DO NOT REMOVE, has no effect in Mozilla, or Opera */
-}
-body{ 
-	background: #FFF;
-	color: #222;
-	font-family: Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
-	font-size: 11px;
-	line-height: 135%;
-	margin: 0px;
-	padding: 0px; /* required for Opera to have 0 margin */
-	text-align: center; /* centers board in MSIE */
-}
-/* 
- * ========================================
- * Set up IPB table
- * ========================================
- */
-.ipbtable { width:100% }
-table.ipbtable,
-tr.ipbtable,
-td.ipbtable
-{ /* required for text in tables, because tables do not inherit from body */
-	background: transparent;
-	color: #222;
-	font-size: 11px;
-	line-height: 135%;
-}
-.ipbtable td,
-.divpad{ /* gives all tables faux cellpadding of 5px */
-	padding: 5px;
-}
-td.nopad{ /* allows some tables to have no padding on the td */
-	padding: 0;
-}
-/* Safari... */
-th
-{
-	text-align: left;
-}
-form{
-	display: inline;
-	margin: 0; /* removes mystery form tag gapping */
-	padding: 0; /* removes mystery form tag gapping */
-}
-img{
-	border: 0; /* makes sure linked images do not have a border */
-	vertical-align: middle;
-}
-/* 
- * ========================================
- * global hyperlink styles 
- * ========================================
- */
-a:link,
-a:visited,
-a:active{
-	background: transparent;
-	color: #222;
-	text-decoration: underline;
-}
-a:hover{
-	background: transparent;
-	color: #34498B;
-}
-/* 
- * ========================================
- * Main wrapper, this controls the overall width of the board in you browser view window. 
- * ========================================
- */
-#ipbwrapper{ 
-	margin: 20px auto 20px auto; /* centers the box, no matter the overall width, also applies a 20px gap at the top and bottom of the board */
-	text-align: left; /* re_aligns text to left second part of two part MSIE centering workaround */
-	/* EDIT THIS TO CHANGE THE WIDTH OF THE BOARD -> 960px is a common fixed resolution size */
-	width: 98%;
-}
-/* 
- * ========================================
- * styles for pagination links 
- * ========================================
- */
-.pagelink,
-.pagelinklast,
-.pagecurrent,
-.minipagelink,
-.minipagelinklast{
-	background: #FBFBFB;
-	border: 1px solid #A2A2A2;
-	padding: 1px 3px 1px 3px;
-}
-.pagelinklast,
-.minipagelinklast{
-	background: #F7F7F7;
-}
-.pagecurrent{
-	background: #FFC9A5;
-}
-.minipagelink,
-.minipagelinklast{
-	border: 1px solid #DBDBDB;
-	font-size: 10px;
-	margin: 0 1px 0 0;
-}
-.pagelink a:active,
-.pagelink a:visited,
-.pagelink a:link,
-.pagelinklast a:active,
-.pagelinklast a:visited,
-.pagelinklast a:link,
-.pagecurrent a:active,
-.pagecurrent a:visited,
-.pagecurrent a:link,
-.minipagelink a:active,
-.minipagelink a:visited,
-.minipagelink a:link,
-.minipagelinklast a:active,
-.minipagelinklast a:visited,
-.minipagelinklast a:link{
-	text-decoration: none;
-}
-/* fake button effect for some links */
-.fauxbutton{
-	background: #BFCDE0;
-	border: 1px solid #b4b4b4;
-	font-size: 11px;
-	font-weight: bold;
-	padding: 4px;
-}
-.fauxbutton a:link,
-.fauxbutton a:visited,
-.fauxbutton a:active{
-	color: #222 !important;
-	text-decoration: none;
-}
-.forumdesc,
-.forumdesc a:link,
-.forumdesc a:visited,
-.forumdesc a:active{ 
-	background: transparent;
-	font-size: 10px; 
-	color: #666;
-	line-height: 135%;
-	margin: 2px 0 0 0;
-	padding: 0;
-}
-/* =================================================================================== */
-/* =================================================================================== */
-/* =================================================================================== */
-.searchlite {
-	background-color:yellow;
-	font-weight:bold;
-	color: red;
-}
-.activeusers{
-	background: #FFF;
-	border: 1px solid #B4B4B4;
-	color: #000;
-	margin: 0px;
-	padding: 1px;
-}
-.activeuserposting a:link,
-.activeuserposting a:visited,
-.activeuserposting a:active,
-.activeuserposting
-{
-	font-style:italic;
-	text-decoration: none;
-	border-bottom:1px dotted black;
-}
-fieldset.search{ 
-	line-height: 150%;
-	padding: 6px; 
-}
-label{ 
-	cursor: pointer; 
-}
-img.attach{ 
-	background: #808080 url(../forum/style_images/black_crys/click2enlarge.gif) no-repeat top right;
-	border: 1px solid #808080;
-	margin: 0 2px 0 0;
-	padding: 11px 2px 2px 2px;
-}
-.thumbwrap,
-.thumbwrapp,
-.fullimagewrap
-{
-	border: 1px solid #B4B4B4;
-	margin: 2px;
-}
-.thumbwrapp{
-	border: 2px solid #660707;
-}
-.fullimagewrap{
-	background: #F7F7F7;
-	text-align: center;
-	margin: 5px 0 5px 0;
-	padding: 5px;
-}
-.thumbwrap h4,
-.thumbwrapp h4{	
-	background: #DDE6F2;
-	border: 0 !important;
-	border-bottom: 1px solid #525252 !important;
-	color: #525252; 
-	font-size: 12px;
-	font-weight: bold; 
-	margin: 0;
-	padding: 5px;
-}
-.thumbwrap p,
-.thumbwrapp p{
-	background: #F6F8F6 !important;
-	border: 0 !important;
-	border-top: 1px solid #525252 !important;
-	margin: 0 !important;
-	padding: 5px !important;
-	text-align: left;
-}
-.thumbwrap p.alt,
-.thumbwrapp p.alt{
-	background: #F7F7F7 !important;
-	margin: 0 !important;
-	padding: 5px !important;
-	text-align: left;
-}
-.thumbwrapp p.pin{
-	background: #EFDFDF !important;
-	text-align: center !important;
-}
-.thumbwrap img.galattach,
-.thumbwrapp img.galattach{
-	background: #FFF url(../forum/style_images/black_crys/img_larger.gif) no-repeat bottom right;
-	border: 1px solid #B4B4B4;
-	margin: 5px;
-	padding: 2px 2px 10px 2px;
-}
-li.helprow{ 
-	margin: 0 0 10px 0;
-	padding: 0; 
-}
-ul#help{ 
-	padding: 0 0 0 15px; 
-}
-.warngood,
-.warnbad{ 
-	color: #0B9500;
-	font-weight: bold;
-}
-.warnbad{ 
-	color: #DD0000;
-}
-#padandcenter{ 
-	margin: 0 auto 0 auto;
-	padding: 14px 0 14px 0;
-	text-align: center;
-}
-#profilename{ 
-	font-size: 28px; 
-	font-weight: bold; 
-}
-#photowrap{ 
-	padding: 6px; 
-}
-#phototitle{ 
-	border-bottom: 1px solid #000; 
-	font-size: 24px; 
-}
-#photoimg{ 
-	margin: 15px 0 0 0;
-	text-align: center; 
-} 
-#ucpmenu,
-#ucpcontent{ 
-	background: #F7F7F7;
-	border: 1px solid #345487;
-	line-height: 150%;
-}
-#ucpmenu p{ 
-	margin: 0; 
-	padding: 2px 5px 6px 9px;
-}
-#ucpmenu a:link, 
-#ucpmenu a:active, 
-#ucpmenu a:visited{ 
-	text-decoration: none; 
-}
-#ucpcontent{ 
-	width: auto;
-}
-#ucpcontent p{ 
-	margin: 0;
-	padding: 10px;
-}
-.activeuserstrip{ 
-	background: #E2E1E1;
-	padding: 6px;
-}
-/* Topic View elements */
-.signature{  
-	background: transparent;
-	color: #339; 
-	font-size: 10px;
-	line-height: 150%;
-}
-.postdetails{ 
-	font-size: 10px;
-	line-height:140%;
-}
-.postcolor{ 
-	font-size: 12px; 
-	line-height: 160%;
-}
-.normalname{ 
-	color: #003;
-	font-size: 12px; 
-	font-weight: bold; 
-}
-.normalname a:link, 
-.normalname a:visited, 
-.normalname a:active{ 
-	font-size: 12px;
-}
-.post1,
-.bg1{ 
-	background: #F7F7F7;
-}
-.post2,
-.bg3{ 
-	background: #F6F8F6;
-}
-.row2shaded,
-.post1shaded { background-color: #DEDBE4 }
-.row4shaded,
-.post2shaded { background-color: #E3DFE7 }
-.row1{ 
-	background: #F7F7F7; 
-}
-.row2{ 
-	background: #F7F7F7; 
-}
-.rowhighlight{
-	background-color: #FFF9BA;
-}
-.darkrow1{ 
-	background: #E2E1E1;
-	color: #666666; 
-}
-.darkrow3{ 
-	background: #e7e6e6; 
-	color: #666666; 
-}
-/* tableborders gives the white column / row lines effect */
-.plainborder,
-.tablefill,
-.tablepad{ 
-	background: #f7f7f7;
-	border: 1px solid #345487;
-}
-.tablefill,
-.tablepad{ 
-	padding: 6px;  
-}
-.tablepad{ 
-	border: 0 !important;
-}
-.wrapmini{ 
-	float: left;
-	line-height: 1.5em;
-	width: 25%;
-}
-.pagelinks{
-	float: left;
-	line-height: 1.2em;
-	width: 35%;
-}
-.desc{ 
-	font-size: 11px; 
-	color: #434951;
-}
-.lastaction
-{
-	font-size: 10px; 
-	color: #434951;
-}
-.edit{ 
-	font-size: 9px;
-}
-.thin{ 
-	border: 1px solid #FFF;
-	border-left: 0;
-	border-right: 0;
-	line-height: 150%;
-	margin: 2px 0 2px 0;
-	padding: 6px 0 6px 0;
-}
-/* =================================================================================== */
-/* =================================================================================== */
-/* =================================================================================== */
-/* 
- * ========================================
- * calendar styles 
- * ========================================
- */
-.calmonths{ 
-	background: #FBFBFB;
-	border: 1px solid #DBDBDB;
-	font-size: 18px; 
-	font-weight: bold; 
-	margin: 5px 0 5px 0;
-	padding: 8px;
-	text-align: center;
-}
-.weekday{
-	font-size: 14px;
-	font-weight: bold;
-}
-.calmonths a{
-	text-decoration: none;
-}
-.calday,
-.calweekday{ 
-	background: #F7F7F7;
-	color: #666;
-	font-size: 11px;
-	font-weight: bold;
-	margin: 0;
-	padding: 4px;
-	text-align: right;
-}
-.calweekday{
-	border-right: 1px solid #AAA;
-	color: #222;
-	font-size: 14px;
-	padding: 6px;
-	text-align: center;
-}
-.celltodayshaded,
-.celldateshaded,
-.cellblank,
-.celldate,
-.celltoday,
-.mcellblank,
-.mcelldate,
-.mcelltoday{
-	background: #F6F8F6; 
-	height: 100px;
-	margin: 0;
-	padding: 0;
-	vertical-align: top;
-}
-.celltodayshaded,
-.celldateshaded
-{
-	background: #E3DFE7;
-}
-.mcellblank,
-.mcelldate,
-.mcelltoday{
-	height: auto;
-}
-.cellblank,
-.mcellblank{
-	background: #DBDBDB;
-}
-.celltoday,
-.celltodayshaded,
-.mcelltoday{
-	border: 2px solid #8B0000;
-}
-.calranged
-{
-	border: 2px outset #DBDBDB;
-	background: #DBDBDB;
-	padding:4px;
-}
-.calitem
-{
-	border-bottom: 1px dotted #DBDBDB;
-	padding:4px;
-}
-/* 
- * ========================================
- * form styles 
- * ========================================
- */
-.input-warn,
-.input-green,
-.input-checkbox,
-input,
-textarea,
-select{
-	background: #FFF;
-	border: 1px solid #D1D1D1;
-	color: #000;
-	font-family: verdana, helvetica, sans-serif;
-	font-size: 11px;
-	margin: 5px;
-	padding: 2px;
-	vertical-align: middle;
-}
-select
-{
-	margin: 0px;
-}
-.input-checkbox
-{
-	border: none;
-}
-.input-warn,
-.input-warn-content
-{
-	border: 1px solid #C00;
-}
-.input-ok,
-.input-ok-content
-{
-	border: 1px solid #0C0;
-}
-.input-warn-content
-{
-	padding: 4px;
-	margin: 4px;
-	background-color: #FCC;
-}
-.input-ok-content
-{
-	padding: 4px;
-	margin: 4px;
-	background-color: #CFC;
-}
-.input-text
-{
-	color: #900;
-}
-input.button{
-	margin: 0;
-	width: auto;
-	cursor: hand;
-	cursor: pointer;
-}
-optgroup option{
-	font-family: verdana, helvetica, sans-serif;
-	font-size: 12px;
-}
-.codebuttons{ 
-	font-family: Verdana, Helvetica, Sans-Serif; 
-	font-size: 10px; 
-	vertical-align: middle;
-	margin:2px;
-}
-.textarea,
-.searchinput,
-.button,
-.gobutton{
-	background: #FFF;
-	border: 1px solid #4C77B6;
-	color: #000;
-	font-family: Verdana, Helvetica, Sans-Serif;
-	font-size: 11px;
-	padding: 2px;
-	vertical-align: middle;
-}
-.button{
-	background: #F7F7F7;
-}
-.gobutton{
-	background: transparent;
-	border: 0;
-	color: #b4b4b4;
-	margin: 0;
-	vertical-align: middle;
-}
-.radiobutton,
-.checkbox,
-.helpbox { 
-	border: 0;
-	vertical-align: middle;
-	background: transparent;
-}
-/* 
- * class.formtable 
- *
- * used for tabled forms 
- * technically tables should not be used for form display 
- * but, in the case of IPB a table is easier to work with
- * for the average webmaster, who has little to no CSS knowledge.
- *
- */
-.formtable{
-	background: transparent;
-}
-.formtable td,
-.pformleft,
-.pformleftw,
-.pformright{
-	background:#F7F7F7;
-	border: 1px solid #DBDBDB;
-	border-bottom: 0;
-	border-left: 0;
-	font-weight: bold;
-	margin: 1px 0 0 0;
-	padding: 6px;
-	width: 25%;
-} 
-.formtable td.wider,
-.pformleftw,
-.pformright{
-	width: 40%;
-}
-.formtable td.formright,
-.pformright{
-	border-right: 0px;
-	font-weight: normal;
-	width: auto;
-} 
-.formtable td.formtitle,
-.formsubtitle{
-	background: #E7E6E6;
-	border: 1px solid #9FB9D4; 
-	border-bottom: 0;
-	border-left: 0;
-	border-right: 0;
-	font-weight: normal;
-}
-.formsubtitle{ 
-	border: 0;
+/*<![CDATA[*/
+<style><!--a:hover{color:cc3300; }--></style>
+<style>
+a{text-decoration:none;
 	color: #666666;
-	font-weight: bold;
-	padding: 5px;
 }
-.formtable td.formstrip{
-	background: #DDE8F2;
-	border: 1px solid #9FB9D4;
-	border-left: 0;
-	border-right: 0;
-	font-weight: normal;
+td { font-family: Verdana, Arial, Helvetica, sans-serif }
+.bodyline   { background-color: #370005; border: 1px #FFFFFF solid; }
+.forumline  { background-color: #370005; border: 2px #FFFFFF solid; }
+td.row1 { background-color: #78000A; }
+.postbody { font-size : 12px; line-height: 18px}
+//-->
+a:visited {
+	color: #E0E0E0;
 }
-/* 
- * ========================================
- * new style quote and code wrappers MATT's DESIGN 
- * ========================================
- */
-.quotetop{
-	background: #F7F7F7 url(../forum/style_images/black_crys/css_img_quote.gif) no-repeat right;
-	border: 1px dotted #000;
-	border-bottom: 0;
-	border-left: 4px solid #aeaeae;
-	color: #000;
-	font-weight: bold;
-	font-size: 10px;
-	margin: 2px auto 0 auto;
-	padding: 3px;
-}
-.quotemain{
-	background: #FAFCFE;
-	border: 1px dotted #000;
-	border-left: 4px solid #aeaeae;
-	border-top: 0;
-	color: #465584;
-	padding: 4px;
-	margin: 0 auto 0 auto;
-}
-.codetop,
-.sqltop,
-.htmltop{
-	background: #FDDBCC url(../forum/style_images/black_crys/css_img_code.gif) no-repeat right;
-	color: #000;
-	font-weight: bold;
-	margin: 0 auto 0 auto;
-	padding: 3px;
-}
-.codemain,
-.sqlmain,
-.htmlmain{
-	background: #FAFCFE;
-	border: 1px dotted #000;
-	color: #465584;
-	font-family: Courier, Courier New, Verdana, Arial;
-	margin: 0 auto 0 auto;
-	padding: 2px;
-}
-/* 
- * ========================================
- * old school quote and code styles - backwards compatibility 
- * ========================================
- */
-#QUOTE,
-#CODE{  
-	background: #FAFCFE; 
-	border: 1px solid #000; 
-	color: #465584; 
-	font-family: Verdana, Arial; 
-	font-size: 11px; 
-	padding: 2px; 
-	white-space: normal;
-}
-#CODE{ 
-	font-family: Courier, Courier New, Verdana, Arial;
-}
-/* 
- * ========================================
- * All New Styles 
- * ========================================
- */
-.cleared{
-	clear: both;
-}
-.borderwrap,
-.borderwrapm{ /* this will affect the outlining border of all the tables and boxes through-out the skin. */
-	background: #FFF;
-	border: 1px solid #b4b4b4;
-	padding: 0px; 
-	margin: 0px; 
-}
-.borderwrapm{
-	margin: 5px;
-}
-.borderwrap h3,
-.maintitle,
-.maintitlecollapse{
-	background: url(../forum/style_images/black_crys/tile_cat.jpg);
-	border: 1px solid #FFF;
-	border-bottom: 1px solid #525252;
-	color: #FFF; 
-	font-size: 12px;
-	font-weight: bold; 
-	margin: 0px;
-	padding: 8px;
-}
-.maintitle td {
-	color: #FFF; 
-	font-size: 12px;
-	font-weight: bold;
-}
-.maintitlecollapse{
-	border: 1px solid #FFF;
-}
-.maintitle p,
-.maintitlecollapse p,
-.formsubtitle p{
-	background: transparent !important;
-	border: 0 !important;
-	margin: 0 !important;
-	padding: 0 !important;
-}
-.maintitle p.expand,
-.maintitle p.goto,
-.maintitlecollapse p.expand,
-.formsubtitle p.members{
-	float: right;
-	width: auto !important;
-}
-.maintitle a:link, 
-.maintitle a:visited,
-.maintitlecollapse a:link, 
-.maintitlecollapse a:visited{ 
-	background: transparent;
-	color: #FFF;
-	text-decoration: none; 
-}
-.maintitle a:hover, 
-.maintitle a:active,
-.maintitlecollapse a:hover, 
-.maintitlecollapse a:active{ 
-	background: transparent;
-	color: #F1F1F1;
-}
-table th,
-.borderwrap table th,
-.subtitle,
-.subtitlediv,
-.postlinksbar{ 
-	background: transparent url(../forum/style_images/black_crys/tile_sub.jpg);
-	border-bottom: 1px solid #525252;
-	color: #666666; 
-	font-size: 10px;
-	font-weight: bold; 
-	letter-spacing: 1px;
-	margin: 0; 
-	padding: 5px; 
-}
-.subtitlediv{
-	border: 1px solid #FFF;
-	border-bottom: 1px solid #525252;
-	text-align: right;
-}
-.borderwrap table th a:link,
-.subtitle a:link,
-.subtitlediv a:link,
-.borderwrap table th a:visited,
-.subtitle a:visited, 
-.subtitlediv a:visited, 
-.borderwrap table th a:active,
-.subtitle a:active,
-.subtitlediv a:active,
-.borderwrap table th a:hover,
-.subtitle a:hover,
-.subtitlediv a:hover{ 
-	background: transparent;
+a:active {
 	color: #666666;
-	text-decoration: none; 
 }
-.borderwrap h4{
-	background: #DDE6F2;
-	border: 1px solid #FFF;
-	border-bottom: 1px solid #525252;
-	border-top: 1px solid #525252;
-	color: #525252; 
-	font-size: 12px;
-	font-weight: bold; 
-	margin: 0;
-	padding: 5px;
-}
-.borderwrap p{
-	background: #F9F9F9;
-	border: 1px solid #CCC;
-	margin: 5px;
-	padding: 10px;
-	text-align: left;
-}
-td.formbuttonrow,
-.pformstrip,
-.borderwrap p.formbuttonrow,
-.borderwrap p.formbuttonrow1{
-	background: #E7E6E6 !important; 
-	border: 1px solid #FFF;
-	border-top: 1px solid #525252;
-	margin: 0px !important;
-	padding: 5px !important;
-	text-align: center;
-}
-td.formbuttonrow{
-	border-bottom: 0;
-	border-left: 0;
-	border-right: 0;
-}
-.borderwrap p.formbuttonrow1{
-	background: #F9F9F9 !important;
-	border: 0;
-	border-top: 1px solid #CCC;
-}
-.bar,
-.barb,
-.barc{
-	background: #F7F7F7;
-	border: 1px solid #FFF;
-}
-.barc{
-	border-bottom: 0;
-}
-.bar p,
-.barb p,
-.barc p{
-	background: transparent;
-	border: 0;
-	color: #222;
-	font-size: 11px;
-	margin: 0;
-	padding: 5px;
-	text-align: left;
-}
-.barb p{
-	text-align: right;
-}
-.bar p.over,
-.bar p.overs,
-.barc p.over,
-.barc p.overs{
-	float: right;
-}
-.barb p.over,
-.barb p.overs{
-	float: left;
-}
-.bar p.overs,
-.barb p.overs,
-.barc p.overs{
-	position: relative;
-	top: 5px;
-}
-.catend{
-	background: #aeaeae;
-	color: #000;
-	font-size: 1px;
-	height: 5px;
-}
-.newslink{
-	background: #FBFBFB;
-	border: 1px solid #DBDBDB;
-	margin: 0;
-	width: 100%;
-}
-.newslink td{
-	color: #222;
-	font-size: 10px;
-	padding: 5px 5px 5px 10px;
-}
-.newslink span{
-	background: transparent;
-	color: #505050;
-	font-style: italic;
-	font-weight: normal;
-}
-.newslink input{
-	background: #FFF;
-	border: 1px solid #999;
-	color: #505050;
-	font-size: 10px;
-	padding: 3px;
-	vertical-align: middle;
-	width: auto;
-}
-.newslink input.button{
-	background: transparent;
-	border: 0;
-	color: #b4b4b4;
-	vertical-align: middle;
-}
-.fieldwrap{
-	background: #F9F9F9;
-	border: 1px solid #CCC;
-	border-top: 0;
-	margin: 5px;
-	padding: 0;
-	text-align: left;
-}
-.fieldwrap h4{
-	background: #EEE;
-	border: 1px solid #CCC;
-	border-left: 0;
-	border-right: 0;
-	color: #444; 
-	font-size: 12px;
-	font-weight: bold; 
-	margin: 0;
-	padding: 5px;
-}
-.errorwrap {
-	background: #F2DDDD;
-	border: 1px solid #992A2A;
-	border-top: 0;
-	margin: 5px;
-	padding: 0;
-}
-.errorwrap h4 {
-	background: #E3C0C0;
-	border: 1px solid #992A2A;
-	border-left: 0;
-	border-right: 0;
-	color: #992A2A; 
-	font-size: 12px;
-	font-weight: bold; 
-	margin: 0;
-	padding: 5px;
-}
-.errorwrap p {
-	background: transparent;
-	border: 0;
-	color: #992A2A;
-	margin: 0;
-	padding: 8px;
-}
-.ruleswrap{
-	background: #F2DDDD;
-	border: 1px solid #992A2A;
-	color: #992A2A; 
-	margin: 5px 0 5px 0;
-	padding: 5px;
-}
-#redirectwrap{
-	background: #FBFBFB;
-	border: 1px solid #DBDBDB;
-	margin: 200px auto 0 auto;
-	text-align: left;
-	width: 500px;
-}
-#redirectwrap h4{
-	background: #d5d6d7;
-	border-bottom: 1px solid #DBDBDB;
+a:visited {
 	color: #666666;
-	font-size: 14px;
-	margin: 0;
-	padding: 5px;
 }
-#redirectwrap p{
-	margin: 0;
-	padding: 5px;
-}
-#redirectwrap p.redirectfoot{
-	background: #d7d9da;
-	border-top: 1px solid #DBDBDB;
-	text-align: center;
-}
-#gfooter{
-	background: #a5a5a5;
-	margin: 5px 0 5px 0;
-	padding: 0;
-	width: 100%;
-}
-#gfooter td{
-	color: #FFF;
-	font-size: 10px;
-	padding: 4px;
-}
-#gfooter a:link,
-#gfooter a:visited{
-	color: #FFF;
-}
-#logostrip{ 
-	background: #F2F2F2 url(../forum/style_images/black_crys/tile_back.jpg);
-	border: 1px solid #FFF;
-	height: 100px;
-	margin: 0;
-	padding: 0;
-}
-#logographic{
-	background: transparent url(../forum/style_images/black_crys/logo4.jpg) no-repeat left;
-	height: 100px;
-	margin: 0;
-	padding: 0;
-}
-#submenu{ 
-	background: transparent url(../forum/style_images/black_crys/top_tile_sub.gif);
-	border: 1px solid #FFF;
-	border-top: 0;
-	color: #666666; 
-	margin: 0;
-	height: 29px;
-	text-align: right;
-}
-.ipb-top-left-link,
-.ipb-top-right-link
-{
-	background: transparent url(../forum/style_images/black_crys/tile_sub-lite.gif);
-	float: right;
-	font-size: 10px;
-	font-weight: bold; 
-	letter-spacing: 0.5px;
-	margin: 0px;
-	padding: 7px 0 7px 0;
-	width: auto;
-	border-left:  1px solid #EFEFEF;
-}
-.ipb-top-left-link
-{
-	float: left;
-	border-left: 0px;
-	border-right: 1px solid #EFEFEF;
-}
-.ipb-top-left-link a:link, 
-.ipb-top-left-link a:visited,
-.ipb-top-right-link a:link, 
-.ipb-top-right-link a:visited
-{ 
-	background: transparent; 
-	color: #353535;
-	padding: 0 6px 0 6px;
-	text-decoration: none;
-}
-.ipb-top-left-link a:hover, 
-.ipb-top-left-link a:active,
-.ipb-top-right-link a:hover, 
-.ipb-top-right-link a:active
-{
-	background: transparent; 
-	color: #525252; 
-}
-#userlinks,
-#userlinksguest{ 
-	background: #FBFBFB;
-	border: 1px solid #DBDBDB;
-	margin: 5px 0 5px 0;
-	padding: 0 5px 0 5px;
-}
-#userlinksguest{ 
-	background: #F4E7EA;
-	border: 1px solid #986265;
-}
-#userlinks p,
-#userlinksguest p{
-	background: transparent !important;
-	border: 0 !important;
-	font-size: 10px;
-	font-weight: bold; 
-	letter-spacing: 1px;
-	margin: 0 !important;
-	padding: 7px 0 7px 0; 
-	text-align: right;
-}
-#userlinks p,
-#userlinksguest p{
-	font-weight: normal;
-	letter-spacing: 0;
-}
-#userlinksguest p.pcen{
-	text-align: center;
-}
-#userlinks p.home,
-#userlinksguest p.home{
-	float: left;
-}
-#navstrip{ 
-	background: transparent;
-	color: #999;
-	font-size: 12px;
-	font-weight: bold;
-	margin: 0 0 5px 0;
-	padding: 14px 0px 8px 0px; 
-}
-#navstrip a:link, 
-#navstrip  a:visited{ 
-	background: transparent; 
-	color: #222; 
-	text-decoration: none;
-}
-#navstrip a:hover, 
-#navstrip a:active{
-	background: transparent; 
-	color: #666666; 
-}
-.toplinks{
-	background: transparent;
-	color: #000;
-	margin: 0;
-	padding: 0 0 5px 0;
-	text-align: right;
-}
-.toplinks span{
-	background: #FBFBFB;
-	border: 1px solid #DBDBDB;
-	border-bottom: 0;
-	color: #000;
-	font-size: 10px;
-	font-weight: bold;
-	margin: 0 10px 0 0;
-	padding: 5px;
-}
-.copyright{ 
-	background: #EEE;
-	font-size: 11px; 
-	margin: 0 0 5px 0;
-	padding: 8px;
-}
-/* 
- * ========================================
- * print page styles 
- * ========================================
- */
-#print{
-	margin: 20px auto 20px auto;
-	padding: 0;
-	text-align: left;
-	width: 85%;
-}
-#print h1,
-#print h2,
-#print h3,
-#print h4,
-#print p{
-	color: #036;
-	font-size: 18px;
-	font-weight: bold;
-	margin: 0;
-	padding: 8px;
-}
-#print h2,
-#print h3,
-#print p{
-	border-bottom: 1px solid #999;
-	font-size: 11px;
-	font-weight: normal;
-}
-#print h3{
-	background: #F5F5F5;
-	font-size: 12px;
-	font-weight: bold;
-	margin: 0 0 10px 0;
-}
-#print h4{
-	background: #F9F9F9;
-	font-size: 11px;
-}
-#print p{
-	margin: 0 0 5px 0;
-	padding: 10px;
-}
-#print p.printcopy{
-	border: 0;
-	color: #000;
-	text-align: center;
-}
-.dny-edit-title
-{
-	border:0px;
-	padding:3px;
-	margin:0px;
-	background: #E7E6E6; 
-	color: #666666; 
-}
-/* ======================================== */
-/* TABS
-/* ======================================== */
-.tabon
-{
-	border-top:1px solid #999;
-	border-left:1px solid #999;
-	border-right:1px solid #999;
-	background-color:#FFF;
-	padding:8px;
-	padding-bottom:9px;
-	font-size:10px;
-	float:left;
-	width:auto;
-	margin-top:3px;
-}
-.taboff
-{
-	border-top: 1px solid #777;
-	border-left: 1px solid #777;
-	border-right: 1px solid #777;
-	background-color: #B5C3D9;
-	color: #333;
-	padding: 8px;
-	font-size:10px;
-	float: left;
-	width: auto;
-	margin-top:3px;
-}
-.tabon a:link, 
-.tabon a:visited, 
-.tabon a:active
-{
-	text-decoration:none;
-	color: #000;
-}
-.taboff a:link, 
-.taboff a:visited, 
-.taboff a:active
-{
-	text-decoration:none;
-	color: #333;
-}
-.mya-back
-{
-	background: #b4b4b4;
-	margin:1px;
-	padding: 1px;
-}
-.mya-content
-{
-	background: #FFF;
-	padding:8px;
-	margin: 1px;
-	border: 1px solid #777;
-}
-.mya-content-tbl
-{
-   background: #FBFBFB;
-   border: 1px solid #777;
-   text-align:left;
-   font-size:10px;
-   white-space:nowrap;
-   margin:1px;
-}
-.mya-fieldwrap
-{
-	background: transparent;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding: 4px;
-	border: 1px solid #C5C7CD;
-	-moz-border-radius: 5px;
-	width: auto;
-	display: block;
-}
-/* -------------------------------- */
-/* Create PM box defaults           */
-/* -------------------------------- */
-.iframeshim
-{
-	position:absolute;
-	display:none;
-	background: #FFF;
-	filter:alpha(opacity=0);
-	border:0px;
-	width:auto;
-	height:auto;
-}
-/* -------------------------------- */
-/* Experimental                     */
-/* -------------------------------- */
-.popupmenu,
-.popupmenu-new
-{
-   background: #FBFBFB;
-   border: 1px solid #666666;
-   text-align:left;
-   font-size:10px;
-   white-space:nowrap;
-   /*padding:3px 5px 3px 3px;*/
-   /*width:300px;*/
-}
-.popupmenu-item
-{
-	padding: 5px;
-	/*margin-top:4px;*/
-	white-space: nowrap;
-	border-bottom: 1px solid #DBDBDB;
-	color:  #000000;
-	font-weight: normal;
-}
-.popupmenu-item-last
-{
-	padding: 5px;
-	/*margin-top:4px;*/
-	white-space: nowrap;
-	color:  #000000;
-	font-weight: normal;
-}
-.popmenubutton-new,
-.popmenubutton
-{
-	width:120px;
-	white-space:nowrap;
-	background-color: #DBDBDB;
-	border:1px solid #666666;
-	color: #666666;
-	font-weight:bold;
-	float:right;
-	height:18px;
-	text-align:center;
-	margin:0px;
-	font-size:11px;
-	padding:3px;
-}
-.popmenubutton-new
-{
-	float:none;
-	width:auto;
-	text-align:left;
-	height:auto;
-	padding:3px;
-	font-weight:normal;
-	background-color:#F6F8F6;
-	background-image: url(../forum/style_images/black_crys/menu_action_down-padded.gif);
-	background-repeat: no-repeat;
-	background-position: right;
-}
-.popmenubutton-new-out
-{
-	padding:4px;
-}
-.popupmenu-new
-{
-	background-color: #F7F7F7;
-}
-.popmenubutton a:link, 
-.popmenubutton a:visited,
-.popmenubutton-new a:link, 
-.popmenubutton-new a:visited,
-.popupmenu-item a:link, 
-.popupmenu-item a:visited,
-.popupmenu-item-last a:link, 
-.popupmenu-item-last a:visited
-{ 
-	color: #666666; 
-	text-decoration: none;
-}
-.popmenubutton a:hover,
-.popmenubutton-new a:hover,
-.popupmenu-item a:hover, 
-.popupmenu-item-last a:hover
-{ 
-	color: #525252; 
-	text-decoration: none;
-}
-.popupmenu-category
-{ 
-	background: transparent url(../forum/style_images/black_crys/tile_sub.jpg);
-	border-top: 1px solid #525252;
-	border-bottom: 1px solid #525252;
-	color: #666666; 
-	font-size: 10px;
-	font-weight: bold; 
-	letter-spacing: 1px;
-	margin: 0; 
-	padding: 5px; 
-}
-/* -------------------------------- */
-/* Loading box
-/* -------------------------------- */
-#loading-layer-inner
-{
-	width:220px;
-	height:28px;
-	padding:18px 10px 10px 10px;
-	text-align:center;
-	color: #000;
-	border: 1px solid;
-	border-color:#CCC #666 #666 #CCC;
-	background-color: #FCF8C7;
-}
-/* -------------------------------- */
-/* Message in a bo(x|ttle)
-/* -------------------------------- */
-#ipd-msg-wrapper
-{
-	display: none;
-	width: 220px;
-}
-#ipd-msg-inner
-{
-	width:100%;
-	height:45px;
-	padding: 6px 4px 4px 4px;
-	margin: 0px;
-	text-align:center;
-	color: #000;
-	border: 1px solid;
-	border-color:#ccc #666 #666 #ccc;
-	background-color: #FCF8C7;
-	filter:alpha(opacity=75);
-	opacity:.75
-}
-#ipd-msg-title
-{
-	width: 100%;
-	height:20px;
-	margin: 0px;
-	padding: 6px 4px 4px 4px;
-	background: transparent url(../forum/style_images/black_crys/css_pp_header.gif);
-	border: 1px solid #666666;
-	border-bottom: 0px;
-	color: #FFF;
-}
-.linked-image
-{
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
-}
-.resized-linked-image
-{
-	margin: 1px 0px 0px 0px;
-	padding: 0px;
-	background-color: #000;
-	border: 0px;
-	color: #FFF;
-	font-size: 10px;
-	width: auto;
-	-moz-border-radius-topleft: 7px;
-	-moz-border-radius-topright: 7px;
-}
-.resized-linked-image-zoom
-{
-	width: 200px;
-	height: 30px;
-	filter:alpha(opacity=85);
-	opacity:.85;
-	background-color: #FFF;
-	padding-top: 6px;
-	padding-left: 5px;
-	top: 0px;
-	left: 0px;
-	position: absolute;
-	display: none;
-}
-/* -------------------------------- */
-/* Edit post reason
-/* -------------------------------- */
-.post-edit-reason
-{
-	background: #EFEFEF;
-	margin-top: 9px;
-	margin-bottom: 0px;
-	padding: 4px;
-	color: #333;
-	font-size: 10px;
-	border: 1px solid #C5C7CD;
-	-moz-border-radius: 5px;
-	width: auto;
-	display: block;
-}
-/* -------------------------------- */
-/* Personal Profile
-/* -------------------------------- */
-.pp-name
-{ 
-	background: #FBFBFB;
-	border: 1px solid #DBDBDB;
-	margin: 0px;
-	padding: 10px;
-}
-.pp-name h3
-{
-	margin:0px;
-	padding:0px 0px 5px 0px;
-	font-size:24px;
-}
-.pp-header
-{ 
-	background: transparent url(../forum/style_images/black_crys/tile_sub.jpg);
-	color: #666666; 
-	font-size: 10px;
-	font-weight: bold; 
-	margin: 0px 0px 1px 0px; 
-	padding: 5px; 
-}
-.pp-title
-{
-	background: url(../forum/style_images/black_crys/css_pp_header.gif);
-	border-bottom: 1px solid #525252;
-	color: #FFF; 
-	font-size: 12px;
-	font-weight: bold; 
-	margin: 0px;
-	padding: 8px;
-}
-.pp-datebox
-{
-	text-align: center;
-	background: #FFFFFF;
-	border: 1px solid #555555;
-	padding: 4px;
-	margin: 0px;
-	font-size:18px;
-	font-weight:bold;
-	line-height: 100%;
-	letter-spacing: -1px;
-	float:right;
-	width: auto;
-}
-.pp-datebox em
-{
-	color: #AAA;
-	font-weight: normal;
-	font-style: normal;
-}
-.pp-contentbox-back
-{
-	background-image: url(../forum/style_images/black_crys/folder_profile_portal/pp-css-contentblock.gif);
-	background-repeat: repeat-x;
-	background-color: #C2C2C2;
-	padding: 6px;
-}
-.pp-contentbox-entry,
-.pp-contentbox-entry-noheight,
-.pp-contentbox-entry-noheight-mod,
-.pp-contentbox-entry-noheight-sel
-{
-	background-color: #F6F8F6;
-	border: 1px solid #888888;
-	line-height: 140%;
-	padding: 8px;
-	margin-bottom: 6px;
-	height: 200px;
-	overflow: auto;
-	overflow-x: auto;
-}
-.pp-contentbox-entry-noheight-sel
-{
-	background-color:#FCECCD;
-}
-.pp-contentbox-entry-noheight-mod
-{
-	background-color:#FDF1DA;
-}
-.pp-contentbox-entry-noheight,
-.pp-contentbox-entry-noheight-mod,
-.pp-contentbox-entry-noheight-sel
-{
-	height: auto;
-	margin-bottom: 1px;
-}
-.pp-image-thumb-wrap,
-.pp-image-thumb-wrap-floatright,
-.pp-image-mini-wrap,
-.pp-image-mini-wrap-floatright
-{
-	width: 52px;
-	height: 52px;
-	text-align: center;
-	background: #FFFFFF;
-	border: 1px solid #555555;
-	padding: 4px;
-	margin-top: auto;
-	margin-bottom: auto;
-}
-.pp-image-mini-wrap,
-.pp-image-mini-wrap-floatright
-{
-	width: 27px;
-	height: 27px;
-	margin-top: auto;
-	margin-bottom: auto;
-}
-.pp-image-thumb-wrap-floatright,
-.pp-image-mini-wrap-floatright
-{
-	float:right;
-}
-.pp-tiny-text
-{
-	color: gray;
-	font-size: 10px;
-}
-.pp-mini-content-entry,
-.pp-mini-content-entry-noheight,
-.pp-mini-entry-noheight-shaded
-{
-	background-color: #F7F7F7;
-	padding: 6px;
-	border-bottom: 1px dotted #555555;
-	clear:both;
-	width: auto;
-	height: 60px;
-}
-.pp-mini-entry-noheight-shaded
-{
-	background-color: #F2F1F3;
-}
-.pp-mini-content-entry-noheight,
-.pp-mini-entry-noheight-shaded
-{
-	height: auto;
-}
-.pp-tabclear,
-.pp-maintitle
-{
-	background: url(../forum/style_images/black_crys/css_pp_header.gif);
-	border: 1px solid #FFF;
-	border-bottom: 1px solid #525252;
-	color: #FFF; 
-	font-size: 12px;
-	font-weight: bold; 
-	margin: 0px;
-	padding: 8px;
-}
-.pp-tabclear
-{
-	border:0px;
-	border-right: 1px solid #a2a2a2;
-	border-left: 1px solid #a2a2a2;
-}
-.pp-tabon
-{
-	border-top:1px solid #6A6A6A;
-	border-left:1px solid #a2a2a2;
-	border-right:1px solid #a2a2a2;
-	background-color:#9E9E9E;
-	color:#FFFFFF;
-	padding:8px;
-	float:left;
-	width:auto;
-	background-image: url(../forum/style_images/black_crys/css_pp_tab_on.gif);
-	background-repeat: repeat-x;
-	background-position: left bottom;
-	margin-top:3px;
-	font-size:10px;
-}
-.pp-taboff,
-.pp-tabshaded
-{
-	border-top: 1px solid #9E9E9E;
-	border-left: 1px solid #9E9E9E;
-	border-right: 1px solid #9E9E9E;
-	background-color: #6A6A6A;
-	color: #6A6A6A;
-	padding:8px;
-	float: left;
-	width: auto;
-	background-image: url(../forum/style_images/black_crys/css_pp_tab_off.gif);
-	background-repeat: repeat-x;
-	background-position: left bottom;
-	margin-top:3px;
-	font-size:10px;
-}
-.pp-tabshaded
-{
-	background-image: url(../forum/style_images/black_crys/css_pp_tab_shaded.gif);
-	background-repeat: repeat-x;
-	background-position: left bottom;
-	color: #516795;
-	border-top: 1px solid #AAAAAA;
-	border-left: 1px solid #AAAAAA;
-	border-right: 1px solid #AAAAAA;
-}
-.pp-tabon a:link, 
-.pp-tabon a:visited, 
-.pp-tabon a:active
-{
-	text-decoration:none;
-	color: #FFFFFF;
-}
-.pp-taboff a:link, 
-.pp-taboff a:visited, 
-.pp-taboff a:active,
-.pp-tabshaded a:link, 
-.pp-tabshaded a:visited, 
-.pp-tabshaded a:active
-{
-	text-decoration:none;
-	color: #6A6A6A;
-}
-.pp-tabwrap
-{
-	height: 34px;
-	margin:0px;
-	padding:0px;
-}
-</style> 
-</head> 
-<body>
-<div id="ipbwrapper">
-<!--ipb.javascript.start-->
-<script type="text/javascript">
- //<![CDATA[
- var ipb_var_st            = "";
- var ipb_lang_tpl_q1       = "Please enter a page number to jump to between 1 and";
- var ipb_var_s             = "217c4c0518f4c226610a86c03e142686";
- var ipb_var_phpext        = "php";
- var ipb_var_base_url      = "../forum/index_s-217c4c0518f4c226610a86c03e142686-.html";
- var ipb_var_image_url     = "style_images/black_crys";
- var ipb_input_f           = "0";
- var ipb_input_t           = "";
- var ipb_input_p           = "";
- var ipb_var_cookieid      = "efc_";
- var ipb_var_cookie_domain = "";
- var ipb_var_cookie_path   = "/";
- var ipb_md5_check         = "880ea6a14ea49e853634fbdc5015a024";
- var ipb_new_msgs          = 0;
- var use_enhanced_js       = 0;
- var use_charset           = "iso-8859-1";
- var ipb_myass_chars_lang  = "Not enough characters";
- var ajax_load_msg		   = "Loading Content...";
- //]]>
-</script>
-<script type="text/javascript" src="../forum/jscripts/ips_ipsclass.js"></script>
-<script type="text/javascript" src="../forum/jscripts/ipb_global.js"></script>
-<script type="text/javascript" src="../forum/jscripts/ips_menu.js"></script>
-<script type="text/javascript" src="../forum/style_images/black_crys/folder_js_skin/ips_menu_html.js"></script>
-<script type="text/javascript" src="../forum/cache/lang_cache/en/lang_javascript.js"></script>
-<script type="text/javascript">
-//<![CDATA[
-var ipsclass = new ipsclass();
-ipsclass.init();
-ipsclass.settings['do_linked_resize'] = parseInt( "1" );
-ipsclass.settings['resize_percent']   = parseInt( "50" );
-//]]>
-</script>
-<!--ipb.javascript.end-->
-<div class="borderwrap">
-	<div id="logostrip"><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-.html"><!--ipb.logo.start--><img src="../forum/style_images/black_crys/logo4.jpg" alt="IPB" style="vertical-align:top" border="0"/><!--ipb.logo.end--></a></div>
-	<div id="submenu">
-		<!--ipb.leftlinks.start-->
-			<div class="ipb-top-left-link"><a href="/">www.PaulDraper-Music.co.uk</a></div>
-		<!--IBF.RULES-->
-		<!--ipb.leftlinks.end-->
-		<!--ipb.rightlinks.start-->
-		<div class="ipb-top-right-link"><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Help.html">Help</a></div>
-		<div class="ipb-top-right-link" id="ipb-tl-search"><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Search-f-0.html">Search</a></div>
-		<div class="ipb-top-right-link"><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Members.html">Members</a></div>
-		<div class="ipb-top-right-link"><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-calendar.html">Calendar</a></div>
-		<div class="popupmenu-new" id="ipb-tl-search_menu" style="display:none;width:210px">
-			<form action="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Search-CODE-01.html" method="post">
-				<input type="hidden" name="forums" id="gbl-search-forums" value="all"/> 
-				<input type="text" size="20" name="keywords" id="ipb-tl-search-box"/>
-				<input class="button" type="image" style="border:0px" src="../forum/style_images/black_crys/login-button.gif"/>
-			</form>
-			<div style="padding:4px">
-				<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Search.html">More Search Options</a>
-			</div>
-		</div>
-		<script type="text/javascript">
-			ipsmenu.register( "ipb-tl-search", 'document.getElementById("ipb-tl-search-box").focus();' );
-			gbl_check_search_box();
-		</script>
-		<!--ipb.rightlinks.end-->
-	</div>
-</div>
-<!-- / End board header -->
-<div id="userlinksguest">
-	<p class="pcen"><b>Welcome Guest</b> ( <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-00.html">Log In</a> | <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Reg-CODE-00.html">Register</a> )
-	</p>
-</div>
-<div id="navstrip"><img src="../forum/style_images/black_crys/nav.gif" border="0" alt=">"/>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-idx.html">PaulDraper-Music.co.uk</a></div>
-<!--IBF.NEWPMBOX-->
-<script type="text/javascript">
-//<![CDATA[
-// Set up img vars
-var img_markers = {
-	'bc_new.gif' : 'bc_nonew.gif',
-	'bf_new.gif' : 'bf_nonew.gif',
-	'br_new.gif' : 'br_nonew.gif'
-};
-var regex_markers = 'bc_new.gif|bf_new.gif|br_new.gif';
-function focus_username( e )
-{
-	if ( e.value == "User Name" )
-	{
-		e.value = '';
-		return false;
-	}
-}
-function focus_password( e )
-{
-	if ( e.value == "------" )
-	{
-		e.value = '';
-		return false;
-	}
-}
-//]]>
-</script>
-<script type="text/javascript" src="../forum/jscripts/ipb_forum.js"></script>
-<table cellspacing="0" class="newslink">
+a:hover {
+	color: #A1A8B3;
+}
+.style3 {
+	font: normal xx-small Tahoma;
+	text-transform: capitalize;
+	border: 0px none #FFFFFF;
+}
+.style4 {
+	font: xx-small Tahoma;
+	border: 0px none #000066;
+}
+.style5 {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.style6 {
+	color: #000000;
+	border-width: 0;
+	background-color: #FFFFFF;
+}
+</style>
+	<meta name="description" content="The first ever website dedicated to Paul Draper; former lead singer/songwriter of Mansun containing News, Pics, Media etc">
+	<meta name="keywords" content="Paul Draper, Paul, Draper, Paul Draper Mansun, Paul Draper-Music, MML, Mansun, myspace, Dominic Chad, Chad, solo, music, mp3s, downloads, news, q&amp;a, audio, video, Skin, website, site, Komakino">
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://www.pauldraper-music.co.uk/js.js"></script>
+<title>Paul Draper-Music.co.uk:</title>
+	<style fprolloverstyle>A:hover {color: #000000; text-decoration: blink; font-weight: bold}
+</style>
+</head>
+<body bgcolor="#E0E0E0" background="bg_00.gif" style="background-attachment: fixed; text-align:center; font-family:Verdana" link="#000000" vlink="#000000" alink="#000000">
+<div align="center">
+<table border="0" width="796" id="table460">
 	<tr>
-		<td><b>Welcome back; your last visit was: <span>Today, 03:22 AM</span></b><br/><b>PaulDraper-Music.co.uk latest news: </b> <i><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2430.html">Draper official page on Facebook: where is it?</a></i></td>
-		<td align="right" valign="middle">
-			<form action="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-01-CookieDate-1.html" method="post">
-				<input type="text" size="20" name="UserName" onfocus="focus_username(this)" value="User Name"/>
-				<input type="password" size="20" name="PassWord" onfocus="focus_password(this)" value="------"/>
-				<input class="button" type="image" src="../forum/style_images/black_crys/login-button.gif"/>
-			</form>
+		<td>
+		<p align="right"><font face="Verdana">
+		<a title="Click To Home" href="/">
+<img border="0" src="pd-music_logo.gif" width="310" height="44" align="left"></a></font> </td>
+	</tr>
+</table>
+<table border="5" width="790" id="table519" bordercolorlight="#A1A8B3" bordercolordark="#A1A8B3" bgcolor="#F5F5F5" style="border-collapse: collapse" bordercolor="#666666">
+	<tr>
+		<td bgcolor="#FFFFFF">
+		<div align="center">
+			<table border="0" width="95%" cellspacing="1" bordercolor="#000000" id="table578" cellpadding="10" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" style="border-collapse: collapse">
+				<tr>
+					<td align="left">
+					<div align="center">
+						<div align="left">
+							<table border="0" width="99%" id="table615">
+								<tr>
+									<td style="width: 798px" class="style5">
+									<font face="Verdana" size="1">
+									<strong>.:Site Navigation:.</strong></font></td>
+									<td width="257" class="style6">
+									<font face="Verdana" size="1">
+									<strong>.:Quick Links:.</strong></font></td>
+								</tr>
+							</table>
+							<table border="0" width="101%" id="table611">
+								<tr>
+									<td width="170" bgcolor="#FFFFFF">
+									<p align="left">
+									<span class="content" style="font-style: normal; font-variant: normal; font-weight: normal; font-size: xx-small; font-family: Verdana; color: #000000; text-decoration: none; ">
+									<font face="Verdana" color="#000000" size="1">
+									&#8226;</font></span><font color="#000000" face="Verdana">
+									</font>
+									<font color="#000000" face="Verdana" size="1">
+									<a style="text-decoration: none" href="draperquestions.html">
+									<font color="#000000">Q&A</font></a></a></font><font face="Verdana" color="#000000"><br>
+									</font>
+									<span class="content" style="font-style: normal; font-variant: normal; font-weight: normal; font-size: xx-small; font-family: Verdana; color: #000000; text-decoration: none; border: 0px none">
+									<font face="Verdana" color="#000000" size="1">
+									&#8226;</font></span><font color="#000000" face="Verdana">
+									</font>
+									<a style="text-decoration: none" href="draperarticles.html">
+									<font face="Verdana" size="1" color="#000000">
+									Articles</font></a><font face="Verdana" color="#000000"><br>
+									</font>
+									<span class="content" style="font-style: normal; font-variant: normal; font-weight: normal; font-size: xx-small; font-family: Verdana; color: #000000; text-decoration: none; border: 0px none">
+									<font face="Verdana" color="#000000" size="1">
+									&#8226;</font></span><font color="#000000" face="Verdana">
+									</font>
+									<font face="Verdana" size="1" color="#000000">
+									<a style="text-decoration: none" href="gallery.html">
+									<font color="#000000">Gallery</font></a></font><font face="Verdana" color="#000000"><br>
+									</font>
+									<span class="content" style="font-style: normal; font-variant: normal; font-weight: normal; font-size: xx-small; font-family: Verdana; color: #000000; text-decoration: none; border: 0px none">
+									<font face="Verdana" color="#000000" size="1">
+									&#8226;</font></span><font color="#000000" face="Verdana">
+									</font>
+									<font color="#000000" size="1" face="Verdana">
+									<a style="text-decoration: none" href="draperprofiles.html">
+									<font color="#000000">Profiles</font></a></font><font face="Verdana" size="2" color="#000000"><strong><br>
+									</strong></font>
+									<span class="content" style="font-style: normal; font-variant: normal; font-weight: normal; font-size: xx-small; font-family: Verdana; color: #000000; text-decoration: none; border: 0px none">
+									<font face="Verdana" color="#000000" size="1">
+									&#8226;</font></span><font color="#000000" face="Verdana">
+									</font>
+									<a style="text-decoration: none" href="drapernews.html">
+									<font face="Verdana" size="1" color="#000000">
+									News Archive</font></a><font face="Verdana" size="1" color="#000000"><br>
+									</font>
+									<span class="content" style="font-style: normal; font-variant: normal; font-weight: normal; font-size: xx-small; font-family: Verdana; color: #000000; text-decoration: none; border: 0px none">
+									<font face="Verdana" color="#000000" size="1">
+									&#8226;</font></span><font color="#000000" face="Verdana">
+									</font>
+									<font color="#000000" face="Verdana" size="1">
+									<a style="text-decoration: none" href="media.html">
+									<font color="#000000">Media</font></a></font><font color="#000000"></a></font><font face="Verdana" color="#000000"><br>
+									</font>
+									<span class="content" style="font-style: normal; font-variant: normal; font-weight: normal; font-size: xx-small; font-family: Verdana; color: #000000; text-decoration: none; border: 0px none">
+									<font face="Verdana" color="#000000" size="1">
+									&#8226;</font></span><font color="#000000" face="Verdana">
+									</font>
+									<a style="text-decoration: none" href="collaborations.html">
+									<font face="Verdana" size="1" color="#000000">
+									Collaborations</font></a><font color="#000000"><br>
+									</font>
+									<span class="content" style="font-style: normal; font-variant: normal; font-weight: normal; font-size: xx-small; font-family: Verdana; color: #000000; text-decoration: none; border: 0px none">
+									<font face="Verdana" color="#000000" size="1">
+									&#8226;</font></span><font color="#000000" face="Verdana">
+									</font>
+									<a style="text-decoration: none" href="draperlinks.html">
+									<font face="Verdana" size="1" color="#000000">
+									Links</font></a><font color="#000000" face="Verdana"><br>
+									</font>
+									<span class="content" style="font-style: normal; font-variant: normal; font-weight: normal; font-size: xx-small; font-family: Verdana; color: #000000; text-decoration: none; border: 0px none">
+									<font face="Verdana" color="#000000" size="1">
+									&#8226;</font></span><font color="#000000" face="Verdana">
+									</font>
+									<a style="text-decoration: none" href="contact.html">
+									<font face="Verdana" size="1" color="#000000">
+									Contact Us</font></a><font color="#000000" face="Verdana">
+									</font><strong>
+									<font color="#000000" face="Verdana"><br>
+									</font></strong>
+									<span class="content" style="font-style: normal; font-variant: normal; font-weight: normal; font-size: xx-small; font-family: Verdana; color: #000000; text-decoration: none; border: 0px none">
+									<font face="Verdana" color="#000000" size="1">
+									&#8226;</font></span><font color="#000000" face="Verdana">
+									</font>
+									<font face="Tahoma" color="#000000" size="1">
+									<span class="unnamed1" style="font-style: normal; font-variant: normal; font-weight: normal; font-size: xx-small; font-family: Verdana; color: #000000; text-decoration: none; border: 0px none">
+									<a class="style3" onclick="window.external.AddFavorite(&quot;/&quot;,&quot;PaulDraper&quot;)" style="text-decoration: none" href="/">
+									<font face="Verdana" size="1" color="#000000">
+									Bookmark Us</font></a></span></font><font face="Verdana"><br>
+									</font>
+									<span class="content" style="font-style: normal; font-variant: normal; font-weight: normal; font-size: xx-small; font-family: Verdana; color: #000000; text-decoration: none; border: 0px none">
+									<font face="Verdana" color="#000000" size="1">
+									&#8226;</font></span><font face="Verdana" color="#000000" size="1"><strong><select class="style4" style="font-family:Verdana; font-size:8pt" onchange="location.href=this.options[this.selectedIndex].value" size="1" name="urlList">
+									<option value="mansun.html">
+									Mansun (1995/2003)</option>
+									<option value="mansun.html">Mansun Biography
+									</option>
+									<option value="albums.html">Albums</option>
+									<option value="singles.html">Singles
+									</option>
+									<option value="scans.html">Media Scans
+									</option>
+									<option value="pics.html">Exclusive Pictures
+									</option>
+									<option value="reviews.html">Reviews
+									</option>
+									<option value="mansunnews.html">News
+									</option>
+									</select></strong></font></td>
+									<td width="270">
+									<table border="0" width="100%" cellspacing="1" height="172">
+										<tr>
+											<td align="center">
+											<p align="center">
+											<img border="1" src="drapernew1235small.jpg" width="235" height="156"></td>
+										</tr>
+									</table>
+									</td>
+									<td width="160"><p>
+									<span class="style2">
+									<font face="Verdana" color="#000000">&#8226;</font></span><font face="Verdana" color="#808080" size="1"><u><strong style="font-weight: 400"><a target="_blank" href="http://www.youtube.com/pauldraperofficial"><font color="#000000"><u>Draper 
+									YouTube</u></font></a></strong></u></font><br>
+									<br>
+									<span class="style2" style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Verdana; color: #000000; text-decoration: none; ">
+									<font face="Verdana" color="#000000">
+									&#8226;</font></span><font face="Verdana" color="#808080" size="1"><u><strong style="font-weight: 400"><font color="#000000"><a target="_blank" href="https://www.facebook.com/PaulDraperMusic"><u><font color="#000000">Draper 
+									Facebook</font></u></a></font></strong></u></font><br>
+									<br>
+									<span class="style2" style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Verdana; color: #000000; text-decoration: none; ">
+									<font face="Verdana" color="#000000">
+									&#8226;</font></span><font face="Verdana" size="1"><strong style="font-weight: 400"><u><font color="#000000"><a target="_blank" title="Excellent Russian Site" href="http://mansun.narod.ru/index.htm"><u><font color="#000000">Inverse 
+									Midas</font></u></a></font></u><br>
+									<font color="#370005"><br>
+									</font></strong></font>
+									<span class="style2" style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Verdana; color: #000000; text-decoration: none; ">
+									<font face="Verdana" color="#000000">
+									&#8226;</font></span><font color="#5d65a0" face="Verdana" size="1"><a target="_blank" href="http://sound.jp/mansun"><u><font color="#000000">Desperate Icons</font></u></a></font><br>
+									<br>
+									<span class="style2" style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Verdana; color: #000000; text-decoration: none; ">
+									<font face="Verdana" color="#000000">
+									&#8226;</font></span><u><font color="#000000" face="Verdana" size="1"><a target="_blank" title="Visit Paul's Myspace" href="http://www.myspace.com/pauldraperofficial"><font color="#000000"><u>Draper 
+									MySpace</u></font></a></font></u><br>
+&nbsp;</p>
+									</td>
+								</tr>
+							</table>
+							</div></div></td>
+				</tr>
+			</table>
+			<div align="center">
+<div align="center">
+<table border="0" width="93%" cellspacing="0" cellpadding="0" id="table631">
+	<tr>
+		<td width="762">
+		<table border="0" id="table632" cellspacing="0" cellpadding="0" style="width: 98%; height: 12px">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="center"><font face="Verdana" size="1" color="#000000">
+				<strong>Most Recent Discussions On the PaulDraper-Music 
+				Forum</strong></font></td>
+			</tr>
+		</table>
+        <table class="tbnewsheader" width="746" height="237">
+         <tr>
+          <td>
+           <table class="tbnewsheader" width="752" height="210">
+            <tr>
+             <td>
+              <p align="center">
+              <iframe name="I1" src="forum/index.html" frameborder="0" width="740" height="205" marginheight="12" border="0">
+              </iframe>
+              <br/>
+              <img border="0" src="separation.jpg" width="500" height="2"><br/>
+				<br>
+             </td>
+            </tr>
+           </table>
+          </td>
+         </tr>
+        </table>
+		</td>
+		<td>
+		&nbsp;<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</td>
+	</tr>
+	</table>
+<table border="0" width="94%" cellspacing="1">
+	<tr>
+		<td bgcolor="#FFFFFF">
+		<p align="center"><strong><font face="Verdana" color="#000000">&nbsp;</font></strong><font face="Verdana" size="2" color="#000000"><strong>Paul Draper 
+		News<br>
+		<br>
+&nbsp;</strong></font><table border="0" width="100%" cellspacing="0" cellpadding="0" id="table670">
+	<tr>
+		<td width="723">
+		<table border="0" width="100%" id="table683" cellspacing="0" cellpadding="0">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="justify"><b><font face="Verdana" size="1" color="#000000">17/04/2012 - 
+				Mansun Mailing List Update</font></b></td>
+			</tr>
+		</table>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">Please 
+		sign up to the Mansun mailing list at this new address</font><font size="1">.</font>
+		</p>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">
+		<a target="_blank" href="http://mansunofficial.com/">
+		<font color="#000000"><u>http://mansunofficial.com/</u></font></a></font></p>
+		<p align="center">
+		<font color="#000000">
+		<img border="0" src="separation.jpg" width="500" height="5"><br>
+&nbsp;</font></td>
+		<td>
+		&nbsp;<p>&nbsp;</p>
+		<p>&nbsp;</td>
+	</tr>
+	</table>
+		<table border="0" width="100%" id="table689" cellspacing="0" cellpadding="0">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="justify"><b><font face="Verdana" size="1" color="#000000">16/04/2012 - Mansun, 
+				Amsterdam Paradiso, Holland, 9th November 1998 
+				(Download)</font></b></b></td>
+			</tr>
+		</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" id="table688">
+	<tr>
+		<td width="720">
+		<p align="left"><font face="Verdana" size="1" color="#000000"><br>
+		MANSUN<br>
+		<br>
+		9, November 1998 Amsterdam Paradiso, Supporting Manic Street Preachers,<br>
+		<br>
+		1. 
+		<a href="pauldraper-music/Stripper Vicar.mp3">
+		<font color="#000000"><u>Stripper Vicar</u></font></a><br>
+		2. 
+		<a href="pauldraper-music/Being A Girl.mp3">
+		<font color="#000000"><u>Being a Girl</u></font></a><br>
+		3. 
+		<a href="pauldraper-music/Negative.mp3">
+		<font color="#000000"><u>Negative</u></font></a><br>
+		4. 
+		<a href="pauldraper-music/Wide Open Space.mp3">
+		<font color="#000000"><u>Wide Open Space</u></font></a><br>
+		5. 
+		<a href="pauldraper-music/She makes my Nose bleed.mp3">
+		<font color="#000000"><u>She makes my Nose bleed</u></font></a><br>
+		6.
+		<a href="pauldraper-music/Everyone Must Win.mp3">
+		<u><font color="#000000">Everyone Must Win</font></u></a><br>
+		7. 
+		<a href="pauldraper-music/Take it easy Chicken.mp3">
+		<u><font color="#000000">Take it easy Chicken</font></u></a><br>
+		8. 
+		<a href="pauldraper-music/Taxloss.mp3">
+		<u><font color="#000000">Taxloss</font></u></a><br>
+		<br>
+		(35:27)<br>
+		<br>
+		right click and save target as...
+		Enjoy!!<br>
+		A</font><font face="Verdana" size="1" color="#000000">ny questions or 
+		requests for more media, email me at
+		<a href="mailto:webmaster@pauldraper-music.co.uk"><font color="#000000">
+		<u>webmaster@pauldraper-music.co.uk</u></font></a> </font></p>
+		<p align="center">
+		<font color="#000000">
+		<img border="0" src="separation.jpg" width="500" height="5"><br>
+&nbsp;</font></p>
+		</td>
+		<td>
+		&nbsp;<p>&nbsp;</p>
+		<p>&nbsp;</td>
+	</tr>
+	</table>
+		<table border="0" width="100%" id="table686" cellspacing="0" cellpadding="0">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="justify"><b><font face="Verdana" size="1" color="#000000">03/02/2012 
+				- South Of The Painted Hall </font></b></b></td>
+			</tr>
+		</table>
 		</td>
 	</tr>
 </table>
-<br/><div class="borderwrap" style="display:none" id="fc_1">
-	<div class="maintitlecollapse">
-		<p class="expand"><a href="javascript:togglecategory(1, 0);"><img src="../forum/style_images/black_crys/exp_plus.gif" border="0" alt="Expand"/></a></p>
-		<p><img src="../forum/style_images/black_crys/nav_m.gif" border="0" alt=">" width="8" height="8"/>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-1.html">Paul Draper</a></p>
-	</div>
-</div>
-<div class="borderwrap" style="display:show" id="fo_1">
-	<div class="maintitle">
-		<p class="expand"><a href="javascript:togglecategory(1, 1);"><img src="../forum/style_images/black_crys/exp_minus.gif" border="0" alt="Collapse"/></a></p>
-		<p><img src="../forum/style_images/black_crys/nav_m.gif" border="0" alt=">" width="8" height="8"/>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-1.html">Paul Draper</a></p>
-	</div>
-	<table class="ipbtable" cellspacing="1">
-		<tr>
-			<th colspan="2" width="66%">Forum</th>
-			<th style="text-align:center" width="7%">Topics</th>
-			<th style="text-align:center" width="7%">Replies</th>
-			<th width="35%">Last Post Info</th>
-		</tr><!-- Forum 30 entry -->
-		<tr>
-			<td align="center" class="row2" width="1%"><img src="../forum/style_images/black_crys/br_redirect.gif" border="0" alt="Redirect"/></td>
-			<td class="row2"><b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-30.html" target="_parent">Locked section of topics on Paul&#39;s solo work, locked at his request.</a></b><br/><span class="forumdesc">There will be an update on this, and what Paul has been busy with in the new year..
-<br/>
-<br/>Merry Christmas & Happy A New Year From Us.</span></td>
-			<td align="center" class="row1">--</td>
-			<td align="center" class="row1">--</td>
-			<td class="row1"><b>Redirected Hits:</b> 360</td>
-		</tr>
-<!-- End of Forum 30 entry --><tr>
-			<td class="catend" colspan="5"><!-- no content --></td>
-		</tr>
-	</table>
-</div>
-<br/><div class="borderwrap" style="display:none" id="fc_24">
-	<div class="maintitlecollapse">
-		<p class="expand"><a href="javascript:togglecategory(24, 0);"><img src="../forum/style_images/black_crys/exp_plus.gif" border="0" alt="Expand"/></a></p>
-		<p><img src="../forum/style_images/black_crys/nav_m.gif" border="0" alt=">" width="8" height="8"/>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-24.html">Paul Draper Profile Links</a></p>
-	</div>
-</div>
-<div class="borderwrap" style="display:show" id="fo_24">
-	<div class="maintitle">
-		<p class="expand"><a href="javascript:togglecategory(24, 1);"><img src="../forum/style_images/black_crys/exp_minus.gif" border="0" alt="Collapse"/></a></p>
-		<p><img src="../forum/style_images/black_crys/nav_m.gif" border="0" alt=">" width="8" height="8"/>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-24.html">Paul Draper Profile Links</a></p>
-	</div>
-	<table class="ipbtable" cellspacing="1">
-		<tr>
-			<th colspan="2" width="66%">Forum</th>
-			<th style="text-align:center" width="7%">Topics</th>
-			<th style="text-align:center" width="7%">Replies</th>
-			<th width="35%">Last Post Info</th>
-		</tr><!-- Forum 15 entry -->
-		<tr>
-			<td align="center" class="row2" width="1%"><img src="../forum/style_images/black_crys/br_redirect.gif" border="0" alt="Redirect"/></td>
-			<td class="row2"><b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-15.html" target="_parent">www.PaulDraper-Music.co.uk</a></b><br/><span class="forumdesc">Click Above For Main Site, Access To Latest News, New Photos, Biographies, Collaboration Work, Media Downloads, And A Huge Archived Mansun Section.</span></td>
-			<td align="center" class="row1">--</td>
-			<td align="center" class="row1">--</td>
-			<td class="row1"><b>Redirected Hits:</b> 9432</td>
-		</tr>
-<!-- End of Forum 15 entry --><!-- Forum 25 entry -->
-		<tr>
-			<td align="center" class="row2" width="1%"><img src="../forum/style_images/black_crys/br_redirect.gif" border="0" alt="Redirect"/></td>
-			<td class="row2"><b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-25.html" target="_parent">Paul Draper Facebook</a></b><br/><span class="forumdesc">Facebook Profile For Paul Draper and Mansun discussion, media etc etc.</span></td>
-			<td align="center" class="row1">--</td>
-			<td align="center" class="row1">--</td>
-			<td class="row1"><b>Redirected Hits:</b> 690</td>
-		</tr>
-<!-- End of Forum 25 entry --><!-- Forum 21 entry -->
-		<tr>
-			<td align="center" class="row2" width="1%"><img src="../forum/style_images/black_crys/br_redirect.gif" border="0" alt="Redirect"/></td>
-			<td class="row2"><b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-21.html" target="_parent">Paul Draper Myspace</a></b><br/><span class="forumdesc">Listen To Paul's New Music, And Add Him As A Friend.</span></td>
-			<td align="center" class="row1">--</td>
-			<td align="center" class="row1">--</td>
-			<td class="row1"><b>Redirected Hits:</b> 1409</td>
-		</tr>
-<!-- End of Forum 21 entry --><!-- Forum 22 entry -->
-		<tr>
-			<td align="center" class="row2" width="1%"><img src="../forum/style_images/black_crys/br_redirect.gif" border="0" alt="Redirect"/></td>
-			<td class="row2"><b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-22.html" target="_parent">Paul Draper Livespace</a></b><br/><span class="forumdesc">Download rare live Mansun tracks, And View Brand New Photos, And Latest News.</span></td>
-			<td align="center" class="row1">--</td>
-			<td align="center" class="row1">--</td>
-			<td class="row1"><b>Redirected Hits:</b> 515</td>
-		</tr>
-<!-- End of Forum 22 entry --><tr>
-			<td class="catend" colspan="5"><!-- no content --></td>
-		</tr>
-	</table>
-</div>
-<br/><div class="borderwrap" style="display:none" id="fc_19">
-	<div class="maintitlecollapse">
-		<p class="expand"><a href="javascript:togglecategory(19, 0);"><img src="../forum/style_images/black_crys/exp_plus.gif" border="0" alt="Expand"/></a></p>
-		<p><img src="../forum/style_images/black_crys/nav_m.gif" border="0" alt=">" width="8" height="8"/>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-19.html">Mansun Multimedia</a></p>
-	</div>
-</div>
-<div class="borderwrap" style="display:show" id="fo_19">
-	<div class="maintitle">
-		<p class="expand"><a href="javascript:togglecategory(19, 1);"><img src="../forum/style_images/black_crys/exp_minus.gif" border="0" alt="Collapse"/></a></p>
-		<p><img src="../forum/style_images/black_crys/nav_m.gif" border="0" alt=">" width="8" height="8"/>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-19.html">Mansun Multimedia</a></p>
-	</div>
-	<table class="ipbtable" cellspacing="1">
-		<tr>
-			<th colspan="2" width="66%">Forum</th>
-			<th style="text-align:center" width="7%">Topics</th>
-			<th style="text-align:center" width="7%">Replies</th>
-			<th width="35%">Last Post Info</th>
-		</tr><tr>
-			<td align="center" class="row2" width="1%"><a id="f-8" href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-8-fromforum-0-i-1.html" title="Mark forum as read?" onclick="boards_send_marker_update( 8, 1);return false;"><img src="../forum/style_images/black_crys/bf_new.gif" border="0" alt="New Posts"/></a></td>
-			<td class="row2">
-				<b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-8.html">Mansun</a></b>
-				<br/>
-				<span class="forumdesc">Discuss And Remember Mansun
-				</span>
-			</td>
-			<td align="center" class="row1">75</td>
-			<td align="center" class="row1">642</td>
-			<td class="row1" nowrap="nowrap"><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2430-view-getlastpost.html" title="Go to the last post"><img src="../forum/style_images/black_crys/lastpost.gif" border="0" alt="Last Post"/></a> <span>Mar 17 2012, 08:49 PM<br/><b>In:</b>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2430-view-getnewpost.html" title="Go to the first unread post: Draper official page on Facebook: where is it?">Draper official page on Fac...</a><br/><b>By:</b> <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-975.html">Richie</a></span></td>
-		</tr><!-- Forum 18 entry -->
-		<tr>
-			<td align="center" class="row2" width="1%"><img src="../forum/style_images/black_crys/br_redirect.gif" border="0" alt="Redirect"/></td>
-			<td class="row2"><b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-18.html" target="_parent">MansunMusicLovers</a></b><br/><span class="forumdesc">Archived Mansun Forum Containing Some Live Mansun MP3S And Archived Posts From 2003.</span></td>
-			<td align="center" class="row1">--</td>
-			<td align="center" class="row1">--</td>
-			<td class="row1"><b>Redirected Hits:</b> 6077</td>
-		</tr>
-<!-- End of Forum 18 entry --><tr>
-			<td align="center" class="row2" width="1%"><a id="f-26" href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-26-fromforum-0-i-1.html" title="Mark forum as read?" onclick="boards_send_marker_update( 26, 1);return false;"><img src="../forum/style_images/black_crys/bf_new.gif" border="0" alt="New Posts"/></a></td>
-			<td class="row2">
-				<b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-26.html">Mansun YouTube Videos</a></b>
-				<br/>
-				<span class="forumdesc">Post Mansun Related You Tube Videos Here..
-				</span>
-			</td>
-			<td align="center" class="row1">18</td>
-			<td align="center" class="row1">101</td>
-			<td class="row1" nowrap="nowrap"><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2378-view-getlastpost.html" title="Go to the last post"><img src="../forum/style_images/black_crys/lastpost.gif" border="0" alt="Last Post"/></a> <span>Dec 15 2010, 06:29 PM<br/><b>In:</b>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2378-view-getnewpost.html" title="Go to the first unread post: COMES AS NO SUPRISE...LIVE">COMES AS NO SUPRISE...LIVE</a><br/><b>By:</b> <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-94.html">Impending Collapser</a></span></td>
-		</tr><tr>
-			<td align="center" class="row2" width="1%"><a id="f-20" href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-20-fromforum-0-i-1.html" title="Mark forum as read?" onclick="boards_send_marker_update( 20, 1);return false;"><img src="../forum/style_images/black_crys/bf_new.gif" border="0" alt="New Posts"/></a></td>
-			<td class="row2">
-				<b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-20.html">Multimedia</a></b>
-				<br/>
-				<span class="forumdesc">Mansun Audio And Video Footage, Bootlegs, Rarities 
-				</span>
-			</td>
-			<td align="center" class="row1">44</td>
-			<td align="center" class="row1">296</td>
-			<td class="row1" nowrap="nowrap"><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2374-view-getlastpost.html" title="Go to the last post"><img src="../forum/style_images/black_crys/lastpost.gif" border="0" alt="Last Post"/></a> <span>Nov 3 2010, 07:08 PM<br/><b>In:</b>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2374-view-getnewpost.html" title="Go to the first unread post: Closed for Business video">Closed for Business video</a><br/><b>By:</b> <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-1314.html">Penelope Cheesecake</a></span></td>
-		</tr><tr>
-			<td class="catend" colspan="5"><!-- no content --></td>
-		</tr>
-	</table>
-</div>
-<br/><div class="borderwrap" style="display:none" id="fc_9">
-	<div class="maintitlecollapse">
-		<p class="expand"><a href="javascript:togglecategory(9, 0);"><img src="../forum/style_images/black_crys/exp_plus.gif" border="0" alt="Expand"/></a></p>
-		<p><img src="../forum/style_images/black_crys/nav_m.gif" border="0" alt=">" width="8" height="8"/>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-9.html">Messageboard</a></p>
-	</div>
-</div>
-<div class="borderwrap" style="display:show" id="fo_9">
-	<div class="maintitle">
-		<p class="expand"><a href="javascript:togglecategory(9, 1);"><img src="../forum/style_images/black_crys/exp_minus.gif" border="0" alt="Collapse"/></a></p>
-		<p><img src="../forum/style_images/black_crys/nav_m.gif" border="0" alt=">" width="8" height="8"/>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-9.html">Messageboard</a></p>
-	</div>
-	<table class="ipbtable" cellspacing="1">
-		<tr>
-			<th colspan="2" width="66%">Forum</th>
-			<th style="text-align:center" width="7%">Topics</th>
-			<th style="text-align:center" width="7%">Replies</th>
-			<th width="35%">Last Post Info</th>
-		</tr><tr>
-			<td align="center" class="row2" width="1%"><a id="f-10" href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-10-fromforum-0-i-1.html" title="Mark forum as read?" onclick="boards_send_marker_update( 10, 1);return false;"><img src="../forum/style_images/black_crys/bf_new.gif" border="0" alt="New Posts"/></a></td>
-			<td class="row2">
-				<b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-10.html">Announcements</a></b>
-				<br/>
-				<span class="forumdesc">Information & Updates (None User Posting)
-					<br/><i>Forum Led by:  <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-975.html">Richie</a></i>
-				</span>
-			</td>
-			<td align="center" class="row1">28</td>
-			<td align="center" class="row1">13</td>
-			<td class="row1" nowrap="nowrap"><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2397-view-getlastpost.html" title="Go to the last post"><img src="../forum/style_images/black_crys/lastpost.gif" border="0" alt="Last Post"/></a> <span>Mar 27 2011, 01:28 AM<br/><b>In:</b>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2397-view-getnewpost.html" title="Go to the first unread post: Forum Update">Forum Update</a><br/><b>By:</b> <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-975.html">Richie</a></span></td>
-		</tr><tr>
-			<td align="center" class="row2" width="1%"><a id="f-11" href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-11-fromforum-0-i-1.html" title="Mark forum as read?" onclick="boards_send_marker_update( 11, 1);return false;"><img src="../forum/style_images/black_crys/bf_new.gif" border="0" alt="New Posts"/></a></td>
-			<td class="row2">
-				<b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-11.html">Site & MB Help</a></b>
-				<br/>
-				<span class="forumdesc">Technical Troubleshoots Site, Messageboard, etc
-<br/>
-					<br/><i>Forum Led by:  <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-975.html">Richie</a></i>
-				</span>
-			</td>
-			<td align="center" class="row1">12</td>
-			<td align="center" class="row1">55</td>
-			<td class="row1" nowrap="nowrap"><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-1938-view-getlastpost.html" title="Go to the last post"><img src="../forum/style_images/black_crys/lastpost.gif" border="0" alt="Last Post"/></a> <span>Feb 28 2012, 01:33 AM<br/><b>In:</b>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-1938-view-getnewpost.html" title="Go to the first unread post: Site New Look">Site New Look</a><br/><b>By:</b> <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-509.html">Dr Apul Pear</a></span></td>
-		</tr><tr>
-			<td class="catend" colspan="5"><!-- no content --></td>
-		</tr>
-	</table>
-</div>
-<br/><div class="borderwrap" style="display:none" id="fc_6">
-	<div class="maintitlecollapse">
-		<p class="expand"><a href="javascript:togglecategory(6, 0);"><img src="../forum/style_images/black_crys/exp_plus.gif" border="0" alt="Expand"/></a></p>
-		<p><img src="../forum/style_images/black_crys/nav_m.gif" border="0" alt=">" width="8" height="8"/>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-6.html">Other Bands/General Chat & Any Other Shit</a></p>
-	</div>
-</div>
-<div class="borderwrap" style="display:show" id="fo_6">
-	<div class="maintitle">
-		<p class="expand"><a href="javascript:togglecategory(6, 1);"><img src="../forum/style_images/black_crys/exp_minus.gif" border="0" alt="Collapse"/></a></p>
-		<p><img src="../forum/style_images/black_crys/nav_m.gif" border="0" alt=">" width="8" height="8"/>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-6.html">Other Bands/General Chat & Any Other Shit</a></p>
-	</div>
-	<table class="ipbtable" cellspacing="1">
-		<tr>
-			<th colspan="2" width="66%">Forum</th>
-			<th style="text-align:center" width="7%">Topics</th>
-			<th style="text-align:center" width="7%">Replies</th>
-			<th width="35%">Last Post Info</th>
-		</tr><tr>
-			<td align="center" class="row2" width="1%"><a id="f-27" href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-27-fromforum-0-i-1.html" title="Mark forum as read?" onclick="boards_send_marker_update( 27, 1);return false;"><img src="../forum/style_images/black_crys/bf_new.gif" border="0" alt="New Posts"/></a></td>
-			<td class="row2">
-				<b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-27.html">Other Bands / Artists</a></b>
-				<br/>
-				<span class="forumdesc">Talk about your other fave bands and artists
-<br/>
-				</span>
-			</td>
-			<td align="center" class="row1">108</td>
-			<td align="center" class="row1">831</td>
-			<td class="row1" nowrap="nowrap"><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2410-view-getlastpost.html" title="Go to the last post"><img src="../forum/style_images/black_crys/lastpost.gif" border="0" alt="Last Post"/></a> <span>Jan 27 2012, 01:54 PM<br/><b>In:</b>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-2410-view-getnewpost.html" title="Go to the first unread post: Liking These">Liking These</a><br/><b>By:</b> <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-1386.html">xiaomaizi85</a></span></td>
-		</tr><tr>
-			<td align="center" class="row2" width="1%"><a id="f-7" href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-04-f-7-fromforum-0-i-1.html" title="Mark forum as read?" onclick="boards_send_marker_update( 7, 1);return false;"><img src="../forum/style_images/black_crys/bf_new.gif" border="0" alt="New Posts"/></a></td>
-			<td class="row2">
-				<b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showforum-7.html">Everyday Crap</a></b>
-				<br/>
-				<span class="forumdesc">Forum Community, Post Anything You Like Here..
-				</span>
-			</td>
-			<td align="center" class="row1">225</td>
-			<td align="center" class="row1">2,789</td>
-			<td class="row1" nowrap="nowrap"><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-1849-view-getlastpost.html" title="Go to the last post"><img src="../forum/style_images/black_crys/lastpost.gif" border="0" alt="Last Post"/></a> <span>Feb 20 2012, 03:57 PM<br/><b>In:</b>&nbsp;<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showtopic-1849-view-getnewpost.html" title="Go to the first unread post: You Tube">You Tube</a><br/><b>By:</b> <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-94.html">Impending Collapser</a></span></td>
-		</tr><tr>
-			<td class="catend" colspan="5"><!-- no content --></td>
-		</tr>
-	</table>
-</div>
-<br/><!-- Board Stats -->
-<div class="toplinks"><span><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-06.html">Delete cookies set by this board</a> &middot; <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Login-CODE-05.html">Mark all posts as read</a></span></div>
-<div class="borderwrap" style="display:none" id="fc_stat">
-	<div class="maintitle">
-		<p class="expand"><a href="javascript:togglecategory('stat', 0);"><img src="../forum/style_images/black_crys/exp_plus.gif" border="0" alt="Expand"/></a></p>
-		<p><img src="../forum/style_images/black_crys/nav_m.gif" border="0" alt=">" width="8" height="8"/>&nbsp;Board Statistics</p>
-	</div>
-	<div class="subtitlediv">
-		<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-search-CODE-getactive.html">Today's active topics</a> &middot; <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Stats-CODE-leaders.html">The moderating team</a> &middot; <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-stats.html">Today's top 20 posters</a> &middot; <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Members-max_results-20-sort_key-posts-sort_order-desc-filter-ALL.html">Overall top 20 posters</a>
-	</div>
-	<div class="formsubtitle">
-<p class="members">11,980 posts &#0124; 1,158 members</p>
-		<p>6 users online</p>
-	</div>
-</div>
-<div class="borderwrap" style="display:show" id="fo_stat">
-	<div class="maintitle">
-		<p class="expand"><a href="javascript:togglecategory('stat', 1);"><img src="../forum/style_images/black_crys/exp_minus.gif" border="0" alt="Collapse"/></a></p>
-		<p><img src="../forum/style_images/black_crys/nav_m.gif" border="0" alt=">" width="8" height="8"/>&nbsp;Board Statistics</p>
-	</div>
-	<table class="ipbtable" cellspacing="1">
-		<tr>
-			<th align="right" colspan="2">
-				<div style="text-align:right">
-					<a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-search-CODE-getactive.html">Today's active topics</a> &middot; <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Stats-CODE-leaders.html">The moderating team</a> &middot; <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-stats.html">Today's top 20 posters</a> &middot; <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Members-max_results-20-sort_key-posts-sort_order-desc-filter-ALL.html">Overall top 20 posters</a>
-				</div>
-			</th>
-		</tr><tr>
-			<td class="formsubtitle" colspan="2">6 user(s) active in the past 15 minutes</td>
-		</tr>
-		<tr>
-			<td class="row1" width="1%"><img src="../forum/style_images/black_crys/user.gif" border="0" alt="Active Users"/></td>
-			<td class="row2">
-				<b>6</b> guests, <b>0</b> members, <b>0</b> anonymous members
-				<div class="thin"></div>
-				<b>Show detailed by:</b> <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Online-CODE-listall-sort_key-click.html">Last Click</a>, <a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-act-Online-CODE-listall-sort_key-name-sort_order-asc-show_mem-reg.html">Member Name</a>
-			</td>
-		</tr>
-		<!--IBF.WHOSCHATTING--><tr>
-			<td class="formsubtitle" colspan="2">Today's Birthdays</td>
-		</tr>
-		<tr>
-			<td class="row1" width="1%"><img src="../forum/style_images/black_crys/calen.gif" border="0" alt="calendar"/></td>
-			<td class="row2">
-				<b>1</b> member is celebrating his/her birthday today<br/><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-656.html">Confederate</a>(<b>31</b>)
-			</td>
-		</tr><tr>
-			<td class="formsubtitle" colspan="2">Board Statistics</td>
-		</tr>
-		<tr>
-			<td class="row1" width="1%"><img src="../forum/style_images/black_crys/stats.gif" border="0" alt="Board Stats"/></td>
-			<td class="row2">Our members have made a total of <b>11,980</b> posts<br/>We have <b>1,158</b> registered members<br/>The newest member is <b><a href="../forum/index_s-217c4c0518f4c226610a86c03e142686-showuser-1396.html">Fitter_happier</a></b><br/>Most users ever online was <b>246</b> on <b>Oct 12 2011, 02:07 PM</b></td>
-		</tr><tr>
-			<td class="catend" colspan="2"><!-- no content --></td>
-		</tr>
-	</table>
-</div>
-<!-- Board Stats --><!-- no content --><!--TASK--><img src="../forum/index_php-s-217c4c0518f4c226610a86c03e142686-act-task.jpg" border="0" height="1" width="1" alt=""/><!--ETASK-->
-<table cellspacing="0" id="gfooter">
+<table border="0" width="93%" cellspacing="0" cellpadding="0" id="table687">
 	<tr>
-		<td width="45%"> </td>
-		<td width="10%" align="center" nowrap="nowrap"><a href="../forum/lofiversion/index.html"><b>Lo-Fi Version</b></a></td>
-		<td width="45%" align="right" nowrap="nowrap">Time is now: 20th March 2012 - 03:22 AM</td>
+		<td width="720">
+		<p align="justify"><font face="Verdana" size="1" color="#000000"><br>
+		Here 
+		is an
+		<a href="southofthepaintedhall.mp3">
+		<u><font color="#000000">MP3</font></u></a> of the unreleased track from 
+		Legacy the best of
+		<a target="_blank" href="http://www.amazon.co.uk/Legacy-Best-Mansun-Bonus-DVD/dp/B000GG4T4G">
+		<u><font color="#000000">Mansun</font></u></a>.<br>
+&nbsp;</font></p>
+		<div class="center" align="center">
+			<div id="sx">
+				<div id="dx">
+					<div id="whitebox">
+						<div id="whitebox_m">
+							<div id="area">
+								<div id="maincolumn2">
+									<div id="albums">
+										<font face="Verdana"><strong>: Lyrics to 
+										South Of The Painted Hall</strong> <b>:</b><br>
+&nbsp;</font><div id="songlyrics_h" class="dn">
+											<font face="Verdana">Infinite 
+											moments of calm in our life<br>
+											What a waste<br>
+											Our defining moments fade away<br>
+											It was easy to navigate the wind<br>
+											When everything was cool<br>
+											I'll know I'm drunk when the truth's 
+											spurting out<br>
+											And our truth is disguised as a joke<br>
+											Like the one about the dying ember<br>
+											(Where the looks are worth a 
+											thousand rumours)<br>
+											<br>
+											My voice can be disguised<br>
+											But my face can't lie<br>
+											There's no antidote to save me<br>
+											When I'm drunk<br>
+											<br>
+											My failures lie, not in falling down<br>
+											but not getting up<br>
+											All our great achievements put to 
+											better use<br>
+											Like the wise man mistaken<br>
+											But the fool, he can often be right<br>
+											I know I'm drunk when the truth's 
+											spurting out<br>
+											And our truth is disguised as a joke<br>
+											Like the one about the dying ember<br>
+											(Where the looks are worth a 
+											thousand rumours)<br>
+											<br>
+											My voice can be disguised<br>
+											But my face can't lie<br>
+											There's no antidote to save me<br>
+											When i'm drunk<br>
+											<br>
+											Yeah, my voice can be disguised<br>
+											I'll break off all contact<br>
+											No signals, so I hope I don't offend 
+											you<br>
+											<br>
+											Even in summer the days are like 
+											winter so bland<br>
+											Thoughts do not fear to abandon 
+											their<br>
+											People they differ in life not in 
+											death<br>
+											So the higher you climb<br>
+											The longer you fall<br>
+											<br>
+											My voice can be disguised<br>
+											But my face can't lie<br>
+											There's no signal I can find</font></div>
+										<font face="Verdana">
+<script type="text/javascript">
+	var	song_id = "";
+	var youtube_video = false;
+	var lv_code = "";
+	var l_code = "";
+	var v_code = "";
+</script>
+										</font>
+										<div id="songlyrics">
+											<font face="Verdana">Infinite 
+											moments of calm in our life<br>
+											What a waste<br>
+											Our defining moments fade away<br>
+											It was easy to navigate the wind<br>
+											When everything was cool<br>
+											I'll know I'm drunk when the truth's 
+											spurting out<br>
+											And our truth is disguised as a joke<br>
+											Like the one about the dying ember<br>
+											(Where the looks are worth a 
+											thousand rumours)<br>
+											<br>
+											My voice can be disguised<br>
+											But my face can't lie<br>
+											There's no antidote to save me<br>
+											When I'm drunk<br>
+											<br>
+											My failures lie, not in falling down<br>
+											but not getting up<br>
+											All our great achievements put to 
+											better use<br>
+											Like the wise man mistaken<br>
+											But the fool, he can often be right<br>
+											I know I'm drunk when the truth's 
+											spurting out<br>
+											And our truth is disguised as a joke<br>
+											Like the one about the dying ember<br>
+											(Where the looks are worth a 
+											thousand rumours)<br>
+											<br>
+											My voice can be disguised<br>
+											But my face can't lie<br>
+											There's no antidote to save me<br>
+											When i'm drunk<br>
+											<br>
+											Yeah, my voice can be disguised<br>
+											I'll break off all contact<br>
+											No signals, so I hope I don't offend 
+											you<br>
+											<br>
+											Even in summer the days are like 
+											winter so bland<br>
+											Thoughts do not fear to abandon 
+											their<br>
+											People they differ in life not in 
+											death<br>
+											So the higher you climb<br>
+											The longer you fall<br>
+											<br>
+											My voice can be disguised<br>
+											But my face can't lie<br>
+											There's no signal I can find</font></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p align="center">
+		<font color="#000000">
+		<img border="0" src="separation.jpg" width="500" height="5"><br>
+&nbsp;</font></p>
+		</td>
+		<td>
+		&nbsp;<p>&nbsp;</p>
+		<p>&nbsp;</td>
+	</tr>
+	</table>
+<table border="0" width="93%" cellspacing="0" cellpadding="0" id="table678">
+	<tr>
+		<td width="720">
+		<table border="0" width="100%" id="table679" cellspacing="0" cellpadding="0">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="justify"><b><font face="Verdana" size="1" size="1" color="#000000">24/01/2012 
+				- Grind Videos & MP3s</font></b></b></td>
+			</tr>
+		</table>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">After 3 years or 
+		so an update blimey!! Well there has been quite a lot of interest on 
+		Paul's work with first band
+		<a target="_blank" href="http://sound.jp/mansun/Desperate%20Icons%20Discography/00ep/grind.html">
+		<u><font color="#000000">Grind</font></u></a> on the Paul Draper
+		<a target="_blank" href="https://www.facebook.com/#!/groups/2442781634/">
+		<u><font color="#000000">facebook</font></u></a> group, people have been 
+		asking to see more clips and mp'3s so i had a sniff about and found the 
+		full and original videos posted some time ago by
+		<a target="_blank" href="http://www.pauldraper-music.co.uk/images/grind/Tree001.jpg">
+		<u><font color="#000000">Steve Heaton</font></u></a> (the one with the 
+		amazing hair) Paul's former band mate, all the MP3's and videos are 
+		available to download now in the
+		<a target="_blank" href="media.html">
+		<u><font color="#000000">media</font></u></a> section, but i'll put up 
+		the best here, which include
+		<a target="_blank" href="media/03Epic.mov">
+		<u><font color="#000000">Epic</font></u></a> (8mins of Draper's 
+		underrated guitar skills) and <u>
+		<a target="_blank" href="media/04Lantern.mov">
+		<font color="#000000"><u>Lantern</u></font></a></u> where you can watch 
+		Paul dancing!! (not sure he'll like that one mind) any questions 
+		or requests for more media email me at
+		<a href="mailto:webmaster@pauldraper-music.co.uk"><font color="#000000">
+		<u>webmaster@pauldraper-music.co.uk</u></font></a> and i'll try my best, 
+		enjoy..</font></p>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">These videos are 
+		best viewed using
+		<a target="_blank" href="http://www.apple.com/quicktime/download/"><u>
+		<font color="#000000">Quicktime</font></u></a> or
+		<a target="_blank" href="http://www.videolan.org/vlc/"><u>
+		<font color="#000000">VLC</font></u></a> player..</font></p>
+		<p align="center">
+		<font color="#000000">
+		<img border="0" src="separation.jpg" width="500" height="5"><br>
+&nbsp;</font></p>
+		</td>
+		<td>
+		&nbsp;<p>&nbsp;</p>
+		<p>&nbsp;</td>
+	</tr>
+	</table>
+<table border="0" width="94%" cellspacing="0" cellpadding="0" id="table676">
+	<tr>
+		<td width="727">
+		<table border="0" width="100%" id="table684" cellspacing="0" cellpadding="0">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="justify"><b><font face="Verdana" size="1" color="#000000">03/09/2008 
+				- Six Anniversary (update 17/02/12)</font></b></td>
+			</tr>
+		</table>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">Paul 
+		has written a blog recently to mark the 10th anniversary of the Mansun 
+		album Six, it will go out this Sunday 7th Sep. If you want to receive it, 
+		sign up at the the official
+		<a target="_blank" href="http://www.pauldraper.info/list.php"><u>
+		<font color="#000000">mailing 
+		list</font></u></a><font color="#000000"><u>.</u> T</font>o Go along with the 
+		blog, Paul will be doing a live Q&A at 6pm (same day) on the official
+		<a target="_blank" href="http://forum.pauldraper.net/"><u>
+		<font color="#000000">forum</font></u></a><u>,</u> 
+		answering your questions about the album.</font></p>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">Now removed 
+		again, as of the date i posted the links. </font></p>
+		<p align="justify"><font face="Verdana" color="#000000">
+		<a target="_blank" href="http://ymlp.com/zRWiLL"><u>
+		<font color="#000000">Part One</font></u></a><br>
+		<a target="_blank" href="http://ymlp.com/zmG23J"><u>
+		<font color="#000000">Part Two</font></u></a></font></p>
+		<p align="center">
+		<font color="#000000">
+		<img border="0" src="separation.jpg" width="500" height="5"><br>
+&nbsp;</font></p>
+		</td>
+		<td>
+		&nbsp;<p>&nbsp;</p>
+		<p>&nbsp;</td>
+	</tr>
+	</table>
+<table border="0" width="94%" cellspacing="0" cellpadding="0" id="table672">
+	<tr>
+		<td width="727">
+		<table border="0" width="100%" id="table677" cellspacing="0" cellpadding="0">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="justify"><b><font face="Verdana" size="1" color="#000000">12/03/2008 - Paul Update & New Work In Progress Track Titles</font></b></td>
+			</tr>
+		</table>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">Hello 
+		again, Paul has been in touch lately and has given us some info on what 
+		he has been working on. He's also give us some track titles although 
+		these are subject to change..</font></p>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">&quot;I took a break 
+		from my project after i realized to do what i wanted to do, i.e. do it 
+		all myself without a band as such id have to re-equip my studio 
+		&quot;Draposound&quot; and I've done some production work to road test it. I did 
+		some stuff with
+		<a target="_blank" href="http://www.catherineannedavies.com/"><u>
+		<font color="#000000">Catherine Anne Davies</font></u></a>, check her site or
+		<a target="_blank" href="http://www.catherineannedavies.com/"><u>
+		<font color="#000000">myspace</font></u></a> 
+		and she's got a track called 'Unravel' we worked on.&quot;</font></p>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">Paul also 
+		went on to reveal some work in progress tracks he has 
+		recently been working on, some interesting titles namely Being A Girl 
+		Part 3 and Cancer Part II.</font></p>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">&quot;Song titles 
+		I've been working on but will probably change are.... </font></p>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">Can U Ever Trust Another, 
+		Feel Like I Wanna Stay, Friend, Sex With Strangers, Can't Get Fairer 
+		Than That, Annie, Being A Girl Part 3, Sociopath, Wont Get Hurt By A 
+		Woman Again, Borderline Nymphomaniac, Life Turns On Inconsequential 
+		Moments, Synth Pop Hero, Monkeys On A Rock, Say What Everyone Else 
+		Thinks And They'll Say Ya Fuckin Mad, cancer pt II.&quot;</font></p>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">More 
+		info on Paul coming soon, also see the 
+		<a href="gallery.html"><u>
+		<font color="#000000">Gallery</font></u></a> page 
+		on this site for new Draper photos.</font></p>
+		<p align="center">
+		<font color="#000000">
+		<img border="0" src="separation.jpg" width="500" height="5"><br>
+&nbsp;</font></p>
+		</td>
+		<td>
+		&nbsp;<p>&nbsp;</p>
+		<p>&nbsp;</td>
+	</tr>
+	</table>
+<table border="0" width="94%" cellspacing="0" cellpadding="0" id="table668">
+	<tr>
+		<td width="727">
+		<table border="0" width="100%" id="table671" cellspacing="0" cellpadding="0">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="justify"><b><font face="Verdana" size="1" color="#000000">
+				16/12/2007 - Mansun Return!?!? (Surely Not)</font></b></td>
+			</tr>
+		</table>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">Rumours are 
+		being put about lately of the possibility of a Mansun return (no, I'm 
+		not cracking up) its said that Paul is now working with Andie, and they 
+		aren't ruling out the possibility of touring and releasing as Mansun. 
+		These rumours were first brought about by a
+		<a target="_blank" href="http://forum.pauldraper.net/viewtopic.php?t=418">
+		<u><font color="#000000">post</font></u></a> on the official forum, although the post has since been 
+		deleted, it suggested that all was not over for Mansun as a band. </font></p>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">This has 
+		also been intensified by a statement from a management company called
+		<a target="_blank" href="http://www.myspace.com/dirtymusicmanagement">
+		<u><font color="#000000">Dirty Music</font></u></a> who have announced that they are managing Paul 
+		Draper/Mansun saying &quot;the future is bright&quot; I guess you all might want 
+		to add yourself to the official Mansun
+		<a target="_blank" href="http://www.myspace.com/mansunspace"><u>
+		<font color="#000000">myspace</font></u></a> 
+		page</font></p>
+		<p align="center"><font face="Verdana" size="1" color="#000000">.</font><font color="#000000"><img border="0" src="separation.jpg" width="500" height="5"><br>
+&nbsp;</font></p>
+		</td>
+		<td>
+		&nbsp;<p>&nbsp;</p>
+		<p>&nbsp;</td>
+	</tr>
+	</table>
+<table border="0" width="94%" cellspacing="0" cellpadding="0" id="table649">
+	<tr>
+		<td width="727">
+		<table border="0" width="100%" id="table669" cellspacing="0" cellpadding="0">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="justify"><b><font face="Verdana" size="1" color="#000000">
+				12/12/2007 - Paul Draper Solo Update</font></b></td>
+			</tr>
+		</table>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">Well 
+		after a quite a long time without anything happening, things now seem on the go, of late 
+		Paul has spent a lot of time (as we know) producing other artists, the 
+		latest <a target="_blank" href="http://www.catherineannedavies.com/"><u>
+		<font color="#000000">Catherine Anne Davies</font></u></a><font color="#000000">,</font> has added a 
+		couples of demo's from their sessions on her
+		<a target="_blank" href="http://www.myspace.com/catherineannedavies"><u>
+		<font color="#000000">myspace</font></u></a> page, which you can hear now...<br>
+		<br>
+		More importantly, the news we all want is on his own solo work. And at 
+		last now things are moving on in a big way, an exclusive interview with 
+		Paul for a Chinese Fanzine will be released around Christmas, this will 
+		contain some (very interesting information). Also expect a brand new diary 
+		entry and his 
+		official website up very soon!!<br>
+		<br>
+		There is also the Paul Draper E-team running from the official
+		<a target="_blank" href="http://forum.pauldraper.net/"><u>
+		<font color="#000000">forum</font></u></a> 
+		this is for anyone who wishes to contribute any ideas to help promote 
+		Paul online, if interested please send an email to <u>
+		<a href="mailto:admin@pauldraper.net"><u><font color="#000000">admin@pauldraper.net</font></u></a></u></font></p>
+		<p align="center">
+		<font color="#000000">
+		<img border="0" src="separation.jpg" width="500" height="5"><br>
+&nbsp;</font></p>
+		</td>
+		<td>
+		&nbsp;<p>&nbsp;</p>
+		<p>&nbsp;</td>
+	</tr>
+	</table>
+<table border="0" width="94%" cellspacing="0" cellpadding="0" id="table620">
+	<tr>
+		<td width="814">
+		<table border="0" width="100%" id="table667" cellspacing="0" cellpadding="0">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="left"><strong><font face="Verdana" size="1" color="#000000">27</font></strong><font face="Verdana"><strong><font size="1" color="#000000">/07/2007</font><font color="#000000"> </font> 
+				<font color="#000000" size="1">
+				-</font></strong><b><font face="Verdana" size="1" color="#000000"> More Photos Yet Still 
+				No Music</font></b></font></td>
+			</tr>
+		</table>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">Just a 
+		quick update showing the latest photos (courtesy of Suzi) see
+		<a href="gallery.html"><u><font color="#000000">gallery</font></u></a> page, as it stands Paul is 
+		'still' busy working on his solo album whilst also working with
+		<a target="_blank" href="http://profile.myspace.com/index.cfm?fuseaction=user.viewprofile&amp;friendid=3159445">
+		<u><font color="#000000">Catherine Anne Davies</font></u></a> on her album, keep checking back here 
+		and his official
+		<a target="_blank" href="http://www.myspace.com/pauldraperofficial"><u>
+		<font color="#000000">myspace</font></u></a> page where a demo is said to be online later this year.</font></p>
+		<p align="center">
+		<font color="#000000">
+		<img border="0" src="separation.jpg" width="500" height="5"><br>
+&nbsp;</font></p>
+		</td>
+		<td>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="814">
+		<table border="0" width="100%" id="table650" cellspacing="0" cellpadding="0">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="left"><font face="Verdana"><strong>
+				<font size="1" color="#000000">08/05/2007</font><font color="#000000"> </font> 
+				<font color="#000000" size="1">
+				-</font></strong><b><font face="Verdana" size="1" color="#000000"> New Draper Photos</font></b></font></td>
+			</tr>
+		</table>
+		<p align="left"><font face="Verdana" size="1" color="#000000">
+		<a href="gallery.html"><u>
+		<font color="#000000">Here</font></u></a> 
+		are the latest photographs of Paul which were taken during the period of 
+		January to March this year. There are more to come along with a lot more 
+		Mansun content coming soon via Paul's new
+		<a target="_blank" href="http://www.youtube.com/pauldraperofficial"><u>
+		<font color="#000000">YouTube</font></u></a> media page</font></p>
+		<p align="center"><font face="Verdana" size="1" color="#000000">
+		<br>
+		</font>
+		<font color="#000000">
+		<img border="0" src="separation.jpg" width="500" height="5"></font><font face="Verdana" size="1" color="#000000"><br>
+		&nbsp;</font></p>
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>
+		</td>
+	</tr>
+	<tr>
+		<td width="814">
+		<table border="0" width="100%" id="table660" cellspacing="0" cellpadding="0">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="left"><strong><font face="Verdana" size="1" color="#000000">22</font></strong><font face="Verdana"><strong><font size="1" color="#000000">/02/2007</font><font color="#000000"> </font> 
+				<font color="#000000" size="1">
+				-</font></strong><b><font face="Verdana" size="1" color="#000000"> General Update</font></b></font></td>
+			</tr>
+		</table>
+		<p align="justify"><b><font face="Verdana" size="3" color="#000000">
+		Newsflash!!!</font></b><font face="Verdana" size="1" color="#000000">&nbsp; </font></p>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">Only 
+		joking! :) Here is a bit of a late PD-Music news update.. Online now is 
+		a very nice in depth Q&A that Paul has done with the
+		<a target="_blank" href="http://www.draperview.com/"><u>
+		<font color="#000000">Draperview</font></u></a><font color="#000000">
+		</font>website..</font></p>
+		<p align="justify"><i><b><font face="Verdana" size="1" color="#000000">&quot;</font></b></i><span class="style15"><font face="Verdana" size="1" color="#000000"><b><i>I've 
+		no idea, I'm just doing my own stuff for my own pleasure. I'll never 
+		fall into the trap of making a record for a record company ever again. 
+		I'll make music on my own terms from now on and ill keep going. Whenever 
+		I fancy writing and releasing, I will!&quot;</i></b></font></span></p>
+		<p align="justify"><span class="style15">
+		<font face="Verdana" size="1" color="#000000">Read the
+		</font></span><font face="Verdana" size="1" color="#000000">
+		Q&A in its entirety
+		<a target="_blank" href="http://www.draperview.com/text/draperviewpauldraperqa1.php">
+		<u><font color="#000000">here</font></u></a>.</font></p>
+		<p align="justify"><font face="Verdana" color="#000000">T</font><font face="Verdana" size="1" color="#000000">here is a new 
+		Official Draper Myspace page aimed towards the various fansites online, it will feature 
+		bootlegs, session 
+		tracks, and also polls where you can determine whats played on the 
+		player! you can find it by clicking <u>
+		<a target="_blank" href="http://www.myspace.com/pauldraperofficialfanspace">
+		<u><font color="#000000">here</font></u></a></u><font color="#000000"> 
+		or use the quick link at the top of this page.</font></font></p>
+		<p align="justify"><font face="Verdana" size="1" color="#000000">Also keep an eye 
+		out for news, and brand new pictures of Paul coming to the fansites very soon.</font></p>
+<p align="center"><font color="#000000"><img border="0" src="separation.jpg" width="500" height="5"><br>
+&nbsp;</font></p>
+		</td>
+		<td>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="814">
+		<table border="0" width="100%" id="table682" cellspacing="0" cellpadding="0">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="left">
+<font face="Verdana"><strong>
+				<font size="1" color="#000000">
+				17/01/2007</font><font face="Verdana" size="1" color="#000000"> </font> 
+				<font color="#000000" size="1">
+				-</font></strong><b><font color="#000000"> </font> <font size="1" color="#000000">
+				Paul's New Music Online Soon </font></b></font></p></td>
+			</tr>
+		</table>
+		<p align="justify"><font size="1" color="#000000" face="Verdana">In a 
+<a target="_blank" href="http://profile.myspace.com/index.cfm?fuseaction=user.viewprofile&amp;friendID=66619353" style="text-decoration: none"><u>
+		<font color="#000000">MySpace</font></u></a> bulletin Paul has announced that <strong><em>&quot;loads&quot;</em></strong> 
+of new material will be on show over the next few weeks.</font><font color="#000000">
+		</font> </p>
+<p align="justify"><font face="Verdana"><font color="#000080" size="1"><em><strong><font color="#000000">
+Bulletin all your myspace friends and ask em to add them selves as my myspace 
+friend then they too can get first listen to loads of new material coming on my 
+myspace page over the next few weeks.</font></strong></em></font><font color="#000000">
+</font> </font></p>
+<p align="left"><font size="1" color="#000000" face="Verdana">Also his official 
+site 
+<a target="_blank" href="http://www.pauldraper.info/" style="text-decoration: none"><u>
+<font color="#000000">www.pauldraper.info</font></u></a> will be launched in the 
+next week or so.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+<p align="center"><font color="#000000"><img border="0" src="separation.jpg" width="500" height="5"><br>
+&nbsp;</font></p>
+		</td>
+		<td>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="814">
+		<table border="0" width="100%" id="table681">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="left"><font face="Verdana"><font size="2"><strong><font size="1" color="#000000">
+				10/11/2006 -</font></strong></font><b><font color="#000000">
+				</font> 
+				<font size="1" color="#000000">Read Paul In </font> 
+				<font face="Verdana" size="1" color="#000000" style="font-size:   (  8 pt)">Uncut</font><font size="1" color="#000000"> 
+				Magazine</font></b></font></td>
+			</tr>
+		</table>
+<p align="justify"><font face="Verdana" size="1" color="#000000">Decembers&nbsp;issue 
+of Uncut features Paul talking about the break up of his former band Mansun and his 
+new solo 
+project..</font><font color="#000000"> </font> </p>
+<p align="justify"><font face="Tahoma" color="#000080" size="1"><em><strong><font face="Verdana" color="#000000" size="1">
+&quot;One night it all kicked off. We broke into the wine cellar, picked out the best 
+bottle of champagne and got twatted. There was a lot of shouting and aggro. Chad 
+punched his hand into a brick wall and ended up in hospital on a morphine drip. 
+People were saying that I was a paranoid schizophrenic In fact with all the 
+stress I got a malignant tumour and had to have a course of radiation therapy 
+before having it cut out.&quot;</font></strong></em></font></p>
+<p align="justify"><font face="Verdana" color="#000000" size="1">Read the 
+scanned article in full by clicking <a target="_blank" href="uncutdec06.html">
+<u><font color="#000000">here</font></u></a>.</font></p>
+<p align="center"><font color="#000000"><img border="0" src="separation.jpg" width="500" height="5"><br>
+&nbsp;</font></p>
+		</td>
+		<td>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="814">
+		<table border="0" width="100%" id="table680">
+			<tr>
+				<td bgcolor="#F5F5F5">
+				<p align="left"><font face="Verdana"><font size="1" color="#000000">
+				<b>22/09/2006</b> <b>-</b></font><b><font color="#000000">
+				</font> 
+				<font size="1" color="#000000">Paul Appears On Steve Lamacq Show</font></b></font></td>
+			</tr>
+		</table>
+<p align="justify"><font size="1" color="#000000" face="Verdana">Paul Draper was 
+a guest on Steve Lamacq's
+<a target="_blank" style="text-decoration: none" href="http://www.bbc.co.uk/6music/shows/roundtable/"><u>
+<font color="#000000">Roundtable</font></u></a> 
+show reviewing the latest tracks doing the rounds alongside Guy Chambers and <a target="_blank" href="http://www.mojo4music.com/" style="text-decoration: none"><u>
+<font color="#000000">Mojo's</font></u></a> journalist Keith Cameron. After producing a band called <a target="_blank" href="http://www.myspace.com/kkkinoxxx" style="text-decoration: none"><u>
+<font color="#000000">Komakino</font></u></a>, Paul said at the start of the show.</font><font color="#000000">
+</font>
+</p>
+<p align="justify"><font size="1" color="#000000" face="Verdana"><em><strong>
+&quot;that's definitely the direction I'll be going down in the future, writing, 
+producing, or a bit of both&quot;</strong>.</em></font></p>
+<p align="justify"><font color="#000000" size="1" face="Verdana">You can 
+download an mp3
+<a target="_blank" href="downloads/interviews/roundtable.mp3">
+<u><font color="#000000">here</font></u></a> or you can listen again in a stream on the BBC6 <a target="_blank" href="http://www.bbc.co.uk/6music/" style="text-decoration: none"><u>
+<font color="#000000">website</font></u></a><u>.</u></font></p>
+<p align="center"><font color="#000000"><img border="0" src="separation.jpg" width="500" height="5"><br>
+&nbsp;</font></p>
+		</td>
+		<td>
+		&nbsp;</td>
+	</tr>
+	</table>
+</div>
+			</div>
+			</div>
+		</td>
 	</tr>
 </table>
-<script type="text/javascript">
-//<![CDATA[
-menu_do_global_init();
-show_inline_messages();
-// Uncomment this to fix IE png images
-// causes page slowdown, and some missing images occasionally
-// if ( is_ie )
-// {
-//	 ie_fix_png();
-// }
-//]]>
-</script>
-<!-- Copyright Information -->
-        				  <div align="center" class="copyright">
-        				  	Powered By IP.Board
-        				  	2.2.1 &copy; 2012 &nbsp;IPS, Inc.
-        				  </div>
-		<!-- / Copyright -->
-<!--
-If you want to remove the following links, visit GPF-Design.com eshop and buy
-copyright removal.
-Links MUST BE visible, if you will remove or change them without my permissions
-this will be treaten as stealing. I will take legal action to suspend your site 
-or any other actions to prevent this.
---> 
-<center>Design by: <a href="http://www.gpf-design.com/" target="_blank" title="Free Invision Forum Skins">Free Skins</a> & <a href="http://www.ebgenius.com/" target="_blank" title="eBusiness Pioneers Forum. HYIPs, SEO...">Business Forum</a></center>
+<table border="0" width="791" id="table633" cellspacing="0" cellpadding="0">
+	<tr>
+		<td>
+		<p align="left"><font color="#FFFFFF" face="Tahoma" size="1"><strong><span class="copyright">
+<font color="#000000" face="Verdana">
+&copy; </font></span></strong></font><font face="Tahoma" size="1">
+		<strong style="font-weight: 400">
+		<font color="#000000" face="Verdana" size="1">
+		Copyright:2012 www.pauldraper-music.co.uk</font></strong></font></td>
+		<td>
+		<p align="right"><strong style="font-weight: 400">
+		<font color="#000000" face="Verdana" size="1">
+		Page updated: 
+<!--webbot bot="Timestamp" s-type="EDITED" s-format="%d-%b-%Y %H:%M:%S" startspan -->17-Apr-2012 02:54:51<!--webbot bot="Timestamp" i-checksum="29817" endspan --></font></strong></td>
+	</tr>
+</table>
 </div>
+<body link="#000000" vlink="#000000" alink="#000000">
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'YOUR_APP_ID', // App ID
+      channelUrl : 'http://www.your_DOMAIN.COM/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+    // Additional initialization code here
+  };
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "http://connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
 <!-- Start of StatCounter Code -->
 <script type="text/javascript" language="javascript">
-var sc_project=1420863; 
+var sc_project=1406426; 
 var sc_invisible=1; 
 var sc_partition=11; 
-var sc_security="593b6f72"; 
+var sc_security="fe115e77"; 
 </script>
-<script type="text/javascript" language="javascript" src="../counter/frames.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img src="../counter.php-sc_project-1420863-java-0-security-593b6f72-invisible-1.jpg" alt="free webpage hit counter" border="0"></a> </noscript>
+<script type="text/javascript" language="javascript" src="counter/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img src="counter.php-sc_project-1406426-java-0-security-fe115e77-invisible-1.jpg" alt="web stats script" border="0"></a> </noscript>
 <!-- End of StatCounter Code -->
-</body> 
+  <center><font size="2">This is a free demo result from the <a href="https://www.waybackmachinedownloader.com/en/">Wayback Machine</a> Downloader. It is not a complete website.</font></center></body>
 </html>
